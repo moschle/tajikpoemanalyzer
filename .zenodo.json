@@ -1,0 +1,24 @@
+{
+  "title": "Tajik Poetry Analyzer",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Schlenstedt, Moritz",
+      "orcid": "0009-0008-0483-093X",
+      "affiliation": "Independent Scholar, Leipzig"
+    }
+  ],
+  "description": "<p>Corpus and analysis tool for Tajik poetry, with a focus on free verse (<em>shi&#700;ri nou</em>) alongside classical structure. It provides syllable and stanza analysis, experimental detection of the sixteen classical &#703;ar&#363;&#7693; metres, phonetic recognition of q&#257;fiya and rad&#299;f, free-verse metrics such as enjambment and line-length variation, neologism detection against a lexicon of more than 68,000 word forms, thematic analysis, and export of a derived feature layer.</p><p><strong>Data policy:</strong> poem texts are never distributed with this software. Full texts remain with their rights holders and are excluded from the repository. Only a derived feature layer is shareable, in which individual poems are identified by hash and cannot be reconstructed.</p>",
+  "keywords": [
+    "Tajik literature",
+    "Persian poetry",
+    "free verse",
+    "computational literary studies",
+    "corpus linguistics",
+    "prosody",
+    "digital humanities"
+  ],
+  "language": "eng",
+  "access_right": "open"
+}

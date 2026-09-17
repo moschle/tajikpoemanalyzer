@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "Tajik Poetry Analyzer"
+message: "If you use this software, please cite it using these metadata."
+type: software
+authors:
+  - family-names: Schlenstedt
+    given-names: Moritz
+    orcid: "https://orcid.org/0009-0008-0483-093X"
+    city: Leipzig
+    country: DE
+repository-code: "https://github.com/moschle/tajikpoemanalyzer"
+abstract: >-
+  Corpus and analysis tool for Tajik poetry, with a focus on free verse
+  (shiʿri nou) alongside classical structure. Provides syllable and stanza
+  analysis, experimental detection of the sixteen classical ʿarūḍ metres,
+  phonetic recognition of qāfiya and radīf, free-verse metrics such as
+  enjambment and line-length variation, neologism detection against a
+  lexicon of more than 68,000 word forms, thematic analysis and export of a
+  derived feature layer. Poem texts themselves are never distributed; only
+  derived features identified by hash are shareable.
+keywords:
+  - Tajik literature
+  - Persian poetry
+  - free verse
+  - computational literary studies
+  - corpus linguistics
+  - prosody
+  - digital humanities
+license: MIT
+version: 1.0.0
+date-released: "2026-09-16"
