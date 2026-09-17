@@ -1,5 +1,7 @@
 # Tajik Poetry Analyzer
 
+[![DOI](https://zenodo.org/badge/1135602419.svg)](https://doi.org/10.5281/zenodo.22807228)
+
 Analysis tool for Tajik poetry with focus on **free verse (shi'ri nou)** and classical structure analysis.
 
 ## Features
