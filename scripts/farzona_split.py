@@ -110,13 +110,15 @@ def stream(ordner, pages, toc_pages, versatz=None, weg=()):
                     ev.append(("NUM", str(num), p))
                 prev_top = None
                 continue
-            if IMPR.search(t) or (TOCL.search(t) and l["n"] > 3):
+            if (IMPR.search(t) and re.search(r"\d", t)) or (TOCL.search(t) and l["n"] > 3):
                 continue
             if re.match(rf"^\s*[1-9¹²³*!|]\s*[{CYRL}]", t) and len(W3.findall(t)) >= 2 and prev_top is not None and step and \
                     l["top"] - prev_top > 2.5 * step:
                 break                                  # Fussnote: Rest der Seite verwerfen
-            if re.match(r"^\s*\S?\s*([хХxX*]\s*){2,3}\W*$", t):
+            if re.match(r"^\s*\S?\s*([хХxX*жЖ]\s*){2,3}\W*$", t) or re.match(r"^\s*[«»]\s*[хХxX][еЕe]?\s*$", t):
                 ev.append(("BREAK", "sterne", p)); prev_top = None; continue   # * * * als "3 хх"
+            if re.match(r"^\s*[-—–]", t) and re.search(r"[-—–]{2,}\s*$|»\s*[-—–]", t) and l["good3"] <= 1:
+                continue                           # Fusszierleiste mit Seitenzahl: still verwerfen
             if re.search(rf"[{CYRL}]{{18,}}", t) and l["good3"] <= 1:
                 ev.append(("BREAK", "ornament", p)); prev_top = None; continue   # OCR einer Zierleiste
             w3 = W3.findall(t)
@@ -174,7 +176,7 @@ def korrektur(korr, p, t, used):
         if j in used or c["s"] != p or not c.get("z"):
             continue
         z = norm(c["z"])[:18]
-        if k.startswith(z) or SequenceMatcher(None, z, k[:len(z)]).ratio() >= 0.8:
+        if k.startswith(z) or (len(z) >= 8 and SequenceMatcher(None, z, k[:len(z)]).ratio() >= 0.8):
             used.add(j)
             return c
     return None
