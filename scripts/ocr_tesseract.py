@@ -10,6 +10,13 @@ Writes per page OUTDIR/pNNNN.txt and pNNNN.tsv (word boxes with confidence), OUT
 --crop  cut a margin (fractions of width/height: left, top, right, bottom) before recognition.
         Use it for books with ornamental frames, which Tesseract otherwise reads as letters
         (e.g. --crop 0.13,0.06,0.11,0.09). Check quality.csv: pages below ~70 need attention.
+Double pages (scans wider than high) are detected and recognised half by half; quality.csv marks them.
+
+Lessons from the Farzona volumes (14 books, ~4,000 pages): run the whole book first, then sort
+quality.csv and re-run only weak pages with a crop; frames and ornaments cost more accuracy than
+resolution does (300 dpi is enough). Separator stars (* * *) are read as short junk such as
+«хх», «ж жож» or «оса:», running heads with page numbers vary from page to page, and footnotes
+sit below a wide gap; handle these in the splitting step, not by changing the OCR.
 
 Requirements: tesseract with the Tajik model (`tgk.traineddata`, e.g. `brew install tesseract
 tesseract-lang`), poppler (`pdftoppm`), Pillow. Splitting the page text into poems is a separate,
@@ -48,10 +55,25 @@ def ocr_page(args):
         subprocess.run(["pdftoppm", "-f", str(p), "-l", str(p), "-r", str(dpi), "-gray", "-png", "-singlefile",
                         str(pdf), "pg"], cwd=tmp, env=ENV, check=True, capture_output=True)
         img = "pg.png"
-        if crop:
-            from PIL import Image
-            im = Image.open(tmp / img)
-            w, h = im.size
+        from PIL import Image
+        im = Image.open(tmp / img)
+        w, h = im.size
+        if w > 1.15 * h:
+            # scanned double page: Tesseract would interleave the lines of both columns.
+            # Recognise the halves one below the other (left page first).
+            halves = [im.crop((0, 0, w // 2, h)), im.crop((w // 2, 0, w, h))]
+            if crop:
+                l, t, r, b = crop
+                halves = [x.crop((int(x.width * l), int(h * t), int(x.width * (1 - r)), int(h * (1 - b))))
+                          for x in halves]
+            st = Image.new("L", (max(x.width for x in halves), sum(x.height for x in halves)), 255)
+            st.paste(halves[0], (0, 0))
+            st.paste(halves[1], (0, halves[0].height))
+            st.save(tmp / "c.png")
+            img = "c.png"
+            (out / "_spreads").mkdir(exist_ok=True)
+            (out / "_spreads" / str(p)).touch()
+        elif crop:
             l, t, r, b = crop
             im.crop((int(w * l), int(h * t), int(w * (1 - r)), int(h * (1 - b)))).save(tmp / "c.png")
             img = "c.png"
@@ -88,12 +110,13 @@ def main():
                 print(f"{i}/{len(pages)} pages")
     with open(a.out / "quality.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["page", "words", "mean_confidence"])
+        w.writerow(["page", "words", "mean_confidence", "double_page"])
+        spreads = {int(x.name) for x in (a.out / "_spreads").iterdir()} if (a.out / "_spreads").exists() else set()
         for p in pages:
             tsv = a.out / f"p{p:04d}.tsv"
             if tsv.exists():
                 words, conf = mean_conf(tsv)
-                w.writerow([p, words, round(conf, 1)])
+                w.writerow([p, words, round(conf, 1), int(p in spreads)])
     with open(a.out / "volume.txt", "w", encoding="utf-8") as f:
         for p in pages:
             t = a.out / f"p{p:04d}.txt"

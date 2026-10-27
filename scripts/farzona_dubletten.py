@@ -9,7 +9,7 @@ from difflib import SequenceMatcher
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from farzona_split import norm, OUT
-from farzona_import import BAENDE
+from farzona_import import ALLE, SAMMELBAENDE, rang
 
 def keys(pm):
     """Schluessel ueber Vers 1–2 und 2–3; eine kurze Kopfzeile (Titel in Normalschrift) wird uebersprungen."""
@@ -24,15 +24,15 @@ def sim(a, b):
 
 def main():
     poems = []
-    for ordner, (titel, jahr, *_ ) in BAENDE.items():
+    for ordner, (titel, jahr, *_ ) in ALLE.items():
         for l in open(OUT / "gedichte" / f"{ordner}.jsonl", encoding="utf-8"):
             pm = json.loads(l)
             ks = keys(pm)
             if ks and not pm.get("uebersetzung"):
-                poems.append((jahr, ordner, pm["nr"], ks))
+                poems.append((jahr, ordner in SAMMELBAENDE, ordner, pm["nr"], ks))
     poems.sort()                                    # frueheste zuerst
     blocks = defaultdict(list)
-    for i, (_, _, _, ks) in enumerate(poems):
+    for i, (_, _, _, _, ks) in enumerate(poems):
         for k in ks:
             for b in (k[2:12], k[-12:-2], k[len(k)//2:len(k)//2+10]):
                 blocks[b].append(i)
@@ -48,22 +48,24 @@ def main():
         for a in range(len(ids)):
             for b in range(a + 1, len(ids)):
                 i, j = ids[a], ids[b]
-                if (i, j) in seen or poems[i][1] == poems[j][1]:
+                if (i, j) in seen or poems[i][2] == poems[j][2]:
                     continue
                 seen.add((i, j))
-                if sim(poems[i][3], poems[j][3]) >= 0.85:
+                if sim(poems[i][4], poems[j][4]) >= 0.85:
                     ri, rj = find(i), find(j)
                     if ri != rj:
                         parent[max(ri, rj)] = min(ri, rj)   # frueherer Index = frueheres Jahr
     erst = {}
-    for i, (j, o, n, _) in enumerate(poems):
+    for i, (j, _, o, n, _) in enumerate(poems):
         r = find(i)
-        erst[f"{o}#{n}"] = f"{poems[r][1]}#{poems[r][2]}"
+        erst[f"{o}#{n}"] = f"{poems[r][2]}#{poems[r][3]}"
     json.dump(erst, open(OUT / "dubletten.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     print("| Jahr | Band | Gedichte | davon Erstdruck | Nachdruck |")
     print("|---|---|---|---|---|")
     tot = [0, 0]
-    for ordner, (titel, jahr, *_ ) in sorted(BAENDE.items(), key=lambda x: x[1][1]):
+    for ordner, (titel, jahr, *_ ) in sorted(ALLE.items(), key=lambda x: rang(x[0])):
+        if ordner in SAMMELBAENDE:
+            titel += " (Sammelausgabe)"
         ks = [k for k in erst if k.startswith(ordner + "#")]
         eb = sum(1 for k in ks if erst[k] == k)
         tot[0] += eb; tot[1] += len(ks) - eb

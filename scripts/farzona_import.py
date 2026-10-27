@@ -26,26 +26,35 @@ BAENDE = {
     "ФАРЗОНА_НАЙСОН": ("Найсон", 2019, "Хуҷанд", "Хуросон", 1700),
     "ФАРЗОНА_НАЙШАКАР": ("Найшакар", 2019, "Душанбе", "Маориф", 10000),
 }
-# Zweibaendige Sammelausgabe (Мураттиб, Vorwort, ueberwiegend Nachdrucke): keine eigenstaendige Publikation,
-# nach Vorgabe 27.10.2026 nicht im Korpus und nicht in den Kennzahlen. Zerlegung bleibt unter gedichte/ erhalten.
+# Zweibaendige Sammelausgabe (Мураттиб, Vorwort, ueberwiegend Nachdrucke): keine eigenstaendige Publikation.
+# Nachdrucke darin zaehlen als Belege (Wiederveroeffentlichung); Gedichte, die in keinem vorliegenden Band stehen,
+# gehen vorlaeufig mit Erstbeleg 2014 ein und sind als 'erstbeleg_sammelausgabe' markiert (Erstdruck unbekannt).
+# Bei gleichem Jahr gehen eigenstaendige Baende vor.
 SAMMELBAENDE = {
     "ФАРЗОНА_ҲАМА_ГУЛ_ҲАМА_ТАРОНА_Ҷ_1": ("Ҳама гул, ҳама тарона. Ҷ. 1", 2014, "Хуҷанд", "Хуросон-Медиа", 1200),
     "ФАРЗОНА_ҲАМА_ГУЛ_ҲАМА_ТАРОНА_Ҷ_2": ("Ҳама гул, ҳама тарона. Ҷ. 2", 2014, "Хуҷанд", "Хуросон-Медиа", 1200),
 }
+ALLE = {**BAENDE, **SAMMELBAENDE}
+
+
+def rang(ordner):
+    return (ALLE[ordner][1], ordner in SAMMELBAENDE)
+
 
 def main():
     args = sys.argv[1:]
     limit = None
     if "--limit" in args:
         i = args.index("--limit"); limit = int(args[i + 1]); del args[i:i + 2]
-    vols = sorted(args or list(BAENDE), key=lambda v: BAENDE[v][1])   # Erstdrucke zuerst
+    vols = sorted(args or list(ALLE), key=rang)   # Erstdrucke zuerst, Sammelausgabe nach gleichem Jahr
     an = EnhancedTajikPoemAnalyzer(enable_corpus=False)
     c = Corpus(Path(__file__).resolve().parent.parent / "tajik_corpus")
     erst = json.load(open(DIR.parent / "dubletten.json", encoding="utf-8"))
     pid_of = {}                                   # ordner#nr -> poem id
     t0 = time.time(); done = fail = belege = uebers = 0
     for v in vols:
-        title, year, city, pub, run = BAENDE[v]
+        title, year, city, pub, run = ALLE[v]
+        art = "Sammelausgabe" if v in SAMMELBAENDE else "eigenstaendiger Band"
         poems = [json.loads(l) for l in open(DIR / f"{v}.jsonl", encoding="utf-8")]
         for pm in poems[:limit]:
             text = "\n".join(pm["lines"]).strip()
@@ -57,7 +66,7 @@ def main():
                 rec = next(p for p in c.data["poems"] if p["id"] == pid_of[e])
                 wid = c.upsert_work(c.upsert_author("Farzona"), title, source_type="printed",
                                     publication_year=year, city=city, publisher=pub,
-                                    notes=f"Auflage {run}; OCR tgk")
+                                    notes=f"{art}; Auflage {run}; OCR tgk")
                 rec["attestations"].append({"work_id": wid, "title_as_given": pm["title"] or pm["lines"][0][:50],
                                             "page": pm["page"], "match": "fuzzy_incipit"})
                 pid_of[k] = rec["id"]; belege += 1; continue
@@ -71,9 +80,10 @@ def main():
                 author_kw={"name_variants": ["Фарзона", "Фарзонаи Хуҷандӣ"]},
                 work_title=title,
                 work_kw={"source_type": "printed", "publication_year": year, "city": city,
-                         "publisher": pub, "notes": f"Auflage {run}; OCR tgk, Seite {pm['page']} ff."},
+                         "publisher": pub, "notes": f"{art}; Auflage {run}; OCR tgk"},
                 analysis=analysis,
-                contributor={"anonymous": True, "source_filename": v, "batch_id": f"ocr_{v}", "page": pm["page"]},
+                contributor={"anonymous": True, "source_filename": v, "batch_id": f"ocr_{v}", "page": pm["page"],
+                             "erstbeleg_sammelausgabe": v in SAMMELBAENDE},
             )
             done += 1
             if done % 100 == 0:
