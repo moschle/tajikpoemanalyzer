@@ -90,6 +90,10 @@ def stream(ordner, pages, toc_pages, versatz=None, weg=()):
         if p in toc_pages or p in weg:
             continue
         ls = [l for l in cache[p] if not (l["good"] >= 1 and norm(l["text"]) in head)]
+        # Kolumnentitel mit OCR-Rauschen ("СЕБАРГА б", "ФАРЗОНА 25"): erste Zeile, kurz, beginnt mit einem Kopfwort
+        while ls and len(ls[0]["text"].split()) <= 3 and any(
+                len(k) >= 6 and norm(ls[0]["text"]).startswith(k) and len(norm(ls[0]["text"])) <= len(k) + 3 for k in head):
+            ls = ls[1:]
         prev = cache.get(p - 1)
         if prev:
             pe = [l["top"] for l in prev if l["good"] >= 2]
@@ -115,7 +119,8 @@ def stream(ordner, pages, toc_pages, versatz=None, weg=()):
             if re.match(rf"^\s*[1-9¹²³*!|]\s*[{CYRL}]", t) and len(W3.findall(t)) >= 2 and prev_top is not None and step and \
                     l["top"] - prev_top > 2.5 * step:
                 break                                  # Fussnote: Rest der Seite verwerfen
-            if re.match(r"^\s*\S?\s*([хХxX*жЖ]\s*){2,3}\W*$", t) or re.match(r"^\s*[«»]\s*[хХxX][еЕe]?\s*$", t):
+            if re.match(r"^\s*\S?\s*([хХxX*жЖ]\s*){2,3}\W*$", t) or re.match(r"^\s*[«»]\s*[хХxX][еЕe]?\s*$", t) \
+                    or (re.fullmatch(r"[\s*жЖхХоОеЕйxX.«»]+", t) and 2 <= len(re.sub(r"[\s.*«»]", "", t)) <= 5):
                 ev.append(("BREAK", "sterne", p)); prev_top = None; continue   # * * * als "3 хх"
             if re.match(r"^\s*[-—–]", t) and re.search(r"[-—–]{2,}\s*$|»\s*[-—–]", t) and l["good3"] <= 1:
                 continue                           # Fusszierleiste mit Seitenzahl: still verwerfen
@@ -144,8 +149,10 @@ def stream(ordner, pages, toc_pages, versatz=None, weg=()):
     return ev
 
 # ---------------------------------------------------------------- Phase 2
-def anchor(ev, toc, window=600):
-    cand = [i for i, e in enumerate(ev) if e[0] in ("LINE", "TITLE")]
+def anchor(ev, toc, window=600, nur_block=False):
+    # nur_block: Anker nur an Blockanfaengen (Titelzeile oder erste Zeile nach Seiten-/Strophen-/Ornamentgrenze)
+    cand = [i for i, e in enumerate(ev) if e[0] == "TITLE" or (e[0] == "LINE" and (
+        not nur_block or i == 0 or ev[i - 1][0] != "LINE"))]
     keys = {i: norm(ev[i][1]) for i in cand}
     hits, pos = {}, 0
     for e in toc:
@@ -294,10 +301,14 @@ def split_band(r, korr_all=None):
     toc = json.load(open(tf, encoding="utf-8")) if tf.exists() else {"eintraege": []}
     entries = [e for e in toc["eintraege"] if not e.get("sektion")]
     toc_pages = {e["tocseite"] for e in toc["eintraege"]}
+    hand = OUT / "toc_hand" / f"{r['ordner']}.txt"     # am Bild abgeschriebenes Verzeichnis ersetzt das OCR-Verzeichnis
+    if hand.exists():
+        entries = [{"titel": l.split("|", 1)[1], "seite": l.split("|", 1)[0]}
+                   for l in hand.read_text(encoding="utf-8").splitlines() if "|" in l]
     korr = korr_all.get(r["ordner"], [])
     weg = {c["s"] for c in korr if c["a"] == "seite_weg"}
     ev = stream(r["ordner"], int(r["seiten"]), toc_pages, toc.get("versatz"), weg)
-    hits = anchor(ev, entries)
+    hits = anchor(ev, entries, nur_block=hand.exists())
     poems = [pm for pm in segment(ev, hits, korr) if not pm["prosa"]]
     med = statistics.median(len([x for x in pm["lines"] if x]) for pm in poems) if poems else 0
     if med == 4:

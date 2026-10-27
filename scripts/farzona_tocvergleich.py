@@ -1,6 +1,6 @@
 """Gleicht die Segmentierung eines Bandes mit einem von Hand abgeschriebenen Inhaltsverzeichnis ab.
 
-Aufruf: farzona_tocvergleich.py ORDNER TOCDATEI
+Aufruf: farzona_tocvergleich.py ORDNER TOCDATEI [BIS_SEITE]
 TOCDATEI: eine Zeile je Gedicht, "seite|titel" (seite "-" wenn im Buch keine Zahl steht).
 Ausgabe: nur Abweichungen -- EXTRA (Gedicht ohne Eintrag) und FEHLT (Eintrag ohne Gedicht).
 """
@@ -27,6 +27,8 @@ def main():
     ordner, tocdatei = sys.argv[1], sys.argv[2]
     toc = [l.split("|", 1) for l in open(tocdatei, encoding="utf-8").read().splitlines() if "|" in l]
     poems = [json.loads(l) for l in open(OUT / "gedichte" / f"{ordner}.jsonl", encoding="utf-8")]
+    if len(sys.argv) > 3:
+        poems = [pm for pm in poems if pm["page"] <= int(sys.argv[3])]
     keys = [norm(t)[:24] for _, t in toc]
     n, m = len(poems), len(toc)
     sc = [[0.0] * m for _ in range(n)]
