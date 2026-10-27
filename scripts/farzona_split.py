@@ -112,14 +112,20 @@ def stream(ordner, pages, toc_pages, versatz=None, weg=()):
                 continue
             if IMPR.search(t) or (TOCL.search(t) and l["n"] > 3):
                 continue
-            if re.match(rf"^\s*[1-9¹²³*!|]\s*[{CYRL}]", t) and prev_top is not None and step and \
+            if re.match(rf"^\s*[1-9¹²³*!|]\s*[{CYRL}]", t) and len(W3.findall(t)) >= 2 and prev_top is not None and step and \
                     l["top"] - prev_top > 2.5 * step:
                 break                                  # Fussnote: Rest der Seite verwerfen
+            if re.match(r"^\s*\S?\s*([хХxX*]\s*){2,3}\W*$", t):
+                ev.append(("BREAK", "sterne", p)); prev_top = None; continue   # * * * als "3 хх"
+            if re.search(rf"[{CYRL}]{{18,}}", t) and l["good3"] <= 1:
+                ev.append(("BREAK", "ornament", p)); prev_top = None; continue   # OCR einer Zierleiste
             w3 = W3.findall(t)
             verslike = (len(w3) >= 2 and len(WORD.findall(t)) >= 0.6 * l["n"]) or \
                 bool(re.search(rf"[{CYRL}]{{3,}}[!?.,:»]", t))
             noise = (not verslike and l["good3"] == 0 and (l["good"] == 0 or (l["n"] <= 3 and l["conf"] < 55))) \
                 or (l["n"] <= 3 and l["good3"] == 0 and re.search(r"\d", t))
+            if ordner in GHASEL_BAENDE and i == 0 and l["n"] <= 3:
+                noise = True                       # Ornament mit Ghaselnummer ueber dem Text
             if noise:
                 ev.append(("BREAK", "ornament", p)); prev_top = None; continue
             if is_title(l):
@@ -176,9 +182,11 @@ def korrektur(korr, p, t, used):
 def segment(ev, hits, korr, vierzeiler=False):
     poems, cur, title, tpage = [], [], None, None
     pending, anchored, num = False, False, None
+    pend_num, hart = None, False
     used = set()
     neu_seite = {c["s"] for c in korr if c["a"] == "neu_seite"}
     neu_seite_done = set()
+    rest_weg = set()
     def flush():
         nonlocal cur, title, tpage, anchored, num
         body = list(cur)
@@ -200,16 +208,21 @@ def segment(ev, hits, korr, vierzeiler=False):
             pending = pending or bool(cur)
             continue
         if typ == "NUM":
-            if cur:
-                flush()
-            num = int(t); pending = False
+            pending = pending or bool(cur)
+            hart = hart or bool(cur)
+            pend_num = int(t)
             continue
         if typ == "STANZA":
             if cur and not pending:
                 cur.append(("", p))
             continue
+        if p in rest_weg:
+            continue
         c = korrektur(korr, p, t, used)
         a = c["a"] if c else None
+        if a == "ab_weg":
+            rest_weg.add(p)
+            continue
         if a == "weg":
             continue
         if a == "neu_seite":
@@ -227,13 +240,18 @@ def segment(ev, hits, korr, vierzeiler=False):
         seitenanfang = p in neu_seite and p not in neu_seite_done
         if seitenanfang:
             neu_seite_done.add(p)
-        weiter = a in ("weiter", "vers") or (first.islower() and i not in hits and a != "neu" and not seitenanfang)
-        neu = a == "neu" or i in hits or seitenanfang
+        weiter = a in ("weiter", "vers") or (first.islower() and i not in hits and a != "neu" and not seitenanfang
+                                             and not hart)
+        neu = a == "neu" or (i in hits and a not in ("weiter", "vers")) or seitenanfang
         if cur and (neu or (pending and not weiter)):
             keep_title = title if not [x for x in cur if x[0]] else None
             flush()
             if keep_title:
                 title = keep_title
+            num = pend_num
+        elif not cur and pend_num is not None:
+            num = pend_num
+        pend_num, hart = None, False
         if c and c.get("titel"):
             title, tpage = c["titel"], p
         if i in hits:
