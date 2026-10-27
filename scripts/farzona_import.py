@@ -34,21 +34,35 @@ def main():
     limit = None
     if "--limit" in args:
         i = args.index("--limit"); limit = int(args[i + 1]); del args[i:i + 2]
-    vols = args or list(BAENDE)
+    vols = sorted(args or list(BAENDE), key=lambda v: BAENDE[v][1])   # Erstdrucke zuerst
     an = EnhancedTajikPoemAnalyzer(enable_corpus=False)
     c = Corpus(Path(__file__).resolve().parent.parent / "tajik_corpus")
-    t0 = time.time(); done = fail = 0
+    erst = json.load(open(DIR.parent / "dubletten.json", encoding="utf-8"))
+    pid_of = {}                                   # ordner#nr -> poem id
+    t0 = time.time(); done = fail = belege = uebers = 0
     for v in vols:
         title, year, city, pub, run = BAENDE[v]
         poems = [json.loads(l) for l in open(DIR / f"{v}.jsonl", encoding="utf-8")]
         for pm in poems[:limit]:
             text = "\n".join(pm["lines"]).strip()
+            k = f"{v}#{pm['nr']}"
+            if pm.get("uebersetzung"):
+                uebers += 1; continue             # Farzonas Uebersetzungen: nicht als eigene Lyrik
+            e = erst.get(k)
+            if e and e != k and e in pid_of:      # Nachdruck: Beleg am Erstdruck
+                rec = next(p for p in c.data["poems"] if p["id"] == pid_of[e])
+                wid = c.upsert_work(c.upsert_author("Farzona"), title, source_type="printed",
+                                    publication_year=year, city=city, publisher=pub,
+                                    notes=f"Auflage {run}; OCR tgk")
+                rec["attestations"].append({"work_id": wid, "title_as_given": pm["title"] or pm["lines"][0][:50],
+                                            "page": pm["page"], "match": "fuzzy_incipit"})
+                pid_of[k] = rec["id"]; belege += 1; continue
             try:
                 res = an.analyze_poem(text)
                 analysis = json.loads(json.dumps(asdict(res), default=str))
             except Exception as e:
                 analysis = {"error": str(e)[:200]}; fail += 1
-            c.add_poem(
+            pid_of[k] = c.add_poem(
                 title=pm["title"] or pm["lines"][0][:50], text=text, author="Farzona",
                 author_kw={"name_variants": ["Фарзона", "Фарзонаи Хуҷандӣ"]},
                 work_title=title,
@@ -61,7 +75,8 @@ def main():
             if done % 100 == 0:
                 c.save(); print(f"{done} Gedichte, {time.time() - t0:.0f}s", flush=True)
     c.save()
-    print(f"FERTIG {done} Gedichte ({fail} Analysefehler), {time.time() - t0:.0f}s; Korpus jetzt {len(c.data['poems'])}")
+    print(f"FERTIG {done} Gedichte ({fail} Analysefehler), {belege} Nachdrucke als Beleg, "
+          f"{uebers} Uebersetzungen ausgelassen, {time.time() - t0:.0f}s; Korpus jetzt {len(c.data['poems'])}")
 
 if __name__ == "__main__":
     main()

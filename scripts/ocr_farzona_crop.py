@@ -12,7 +12,7 @@ OUT = Path.home() / "Projects/tajikpoemanalyzer/data/ocr_farzona"
 # Rand in Prozent: links, oben, rechts, unten
 CROP = {
     "ФАРЗОНА_НАЙСОН": (0.16, 0.11, 0.15, 0.16),
-    "ФАРЗОНА_МӮҲРИ_ГУЛИ_МИНО": (0.10, 0.06, 0.09, 0.09),
+    "ФАРЗОНА_МӮҲРИ_ГУЛИ_МИНО": (0.13, 0.06, 0.11, 0.09),   # 27.10.: Rahmenreste links bei 0.10
 }
 ENV = dict(os.environ, PATH="/opt/homebrew/bin:/usr/local/bin:" + os.environ.get("PATH", ""), OMP_THREAD_LIMIT="1")
 
@@ -61,7 +61,8 @@ def main():
     with open(OUT / "baende.csv", encoding="utf-8") as f:
         baende = {r["ordner"]: (SRC / r["datei"], int(r["seiten"])) for r in csv.DictReader(f)}
     jobs = []
-    for ordner in CROP:
+    nur = [a for a in sys.argv[1:] if a in CROP]
+    for ordner in (nur or CROP):
         pdf, n = baende[ordner]
         pages = [test] if test else range(1, n + 1)
         jobs += [(pdf, ordner, p, bool(test)) for p in pages]
@@ -69,7 +70,7 @@ def main():
         res = list(ex.map(run, jobs))
     if test:
         return
-    for ordner in CROP:
+    for ordner in (nur or CROP):
         r = [x for x in res if x[0] == ordner]
         alt = sum(x[2] for x in r) / len(r); neu = sum(max(x[2], x[3]) for x in r) / len(r)
         print(f"{ordner}: {len(r)} S., ersetzt {sum(x[4] for x in r)}, Mittel {alt:.1f} -> {neu:.1f}")
