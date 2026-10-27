@@ -36,7 +36,7 @@ class TajikOCREngine:
 
         # Tesseract-Sprachpakete für persische/tadschikische Sprachen
         self.languages = {
-            'tajik_cyrillic': 'rus',  # Tadschikisch nutzt russisches Tesseract-Modell
+            'tajik_cyrillic': 'tgk',  # tadschikisches Tesseract-Modell (statt rus)
             'persian': 'fas',          # Persisch (Arabische Schrift)
             'arabic': 'ara',           # Arabisch
             'russian': 'rus',          # Russisch (für Lehnwörter)

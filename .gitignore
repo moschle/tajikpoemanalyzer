@@ -103,3 +103,6 @@ tajik_poetry_library/
 snapshots/
 /exports/
 uploads/
+
+# OCR-Volltexte (urheberrechtlich geschützt, nie online)
+data/ocr_farzona/
