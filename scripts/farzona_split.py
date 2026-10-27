@@ -23,7 +23,11 @@ W3 = re.compile(rf"[{CYRL}]{{3,}}")
 TOCL = re.compile(r"(\.\s?){4,}|…{2,}")
 IMPR = re.compile(r"ББК|УДК|ISBN|ІЅВК|Адади нашр|Теъдод|Супориши|Ба чоп|Ба матбаа|Ҷузъи|нусха")
 # Uebersetzungsteile (Stichprobe 27.10.2026): Найсон ab S. 213 (Ли Бо, Haiku, Goethe), Себарга ab S. 236
-# (Trennblatt ТАРҶУМАҲО; datierte Gedichte 1911–1941, Abai ab S. 376; Ende ab S. 385 unsicher).
+# (Trennblatt ТАРҶУМАҲО; laut Inhaltsverzeichnis Goethe, Puschkin, Achmatowa, Jessenin, Zwetajewa, Abai bis Buchseite 424 = Bandende).
+# Baende mit Titeln in Gross-/Kleinschreibung, nur an der Zentrierung erkennbar
+ZENTRIERTE_TITEL = {"ФАРЗОНА_ҲАМА_ГУЛ_ҲАМА_ТАРОНА_Ҷ_1", "ФАРЗОНА_ҲАМА_ГУЛ_ҲАМА_ТАРОНА_Ҷ_2"}
+# Vierzeilerbaende, deren Sternzeilen als wechselnde Kurzwoerter erkannt werden ("оса:", "яЭ СОЗ.")
+KURZZEILE_TRENNT = {"ФАРЗОНА_НАЙСОН"}
 UEBERSETZUNG_AB = {"ФАРЗОНА_НАЙСОН": 213, "ФАРЗОНА_СЕБАРГА": 236}
 # Reimwechsel als Gedichtgrenze nur in Ghaselbaenden ohne Titel (in Strophengedichten wechselt der Reim).
 GHASEL_BAENDE = {"ФАРЗОНАИ_ХУҶАНДӢ_ДЕВОН_Панҷсад_ғазали_дилангез", "ФАРЗОНА_САД_БАРГИ_ҒАЗАЛ", "ФАРЗОНА_САДУ_ЯК_ҒАЗАЛ"}
@@ -35,20 +39,32 @@ def lines_of(tsv):
             if r.get("level") != "5" or not (r.get("text") or "").strip():
                 continue
             k = (int(r["block_num"]), int(r["par_num"]), int(r["line_num"]))
-            rows.setdefault(k, []).append((int(r["left"]), int(r["top"]), int(r["height"]), float(r["conf"]), r["text"]))
+            rows.setdefault(k, []).append((int(r["left"]), int(r["top"]), int(r["height"]), float(r["conf"]), r["text"],
+                                           int(r["width"])))
     out = []
     for ws in rows.values():
         ws.sort()
         good = [w for w in ws if w[3] >= 60 and WORD.search(w[4])]
         out.append({"top": min(w[1] for w in ws), "text": " ".join(w[4] for w in ws), "n": len(ws),
+                    "left": ws[0][0], "right": max(w[0] + w[5] for w in ws),
                     "good": len(good), "good3": sum(1 for w in good if W3.search(w[4])),
                     "conf": sum(w[3] for w in ws) / len(ws)})
     out.sort(key=lambda l: l["top"])
     return out
 
-def is_title(l):
+def is_title(l, rand=None):
     letters = [c for c in l["text"] if c.isalpha()]
-    return len(letters) >= 3 and sum(c.isupper() for c in letters) / len(letters) > 0.8 and l["n"] <= 8
+    if len(letters) >= 3 and sum(c.isupper() for c in letters) / len(letters) > 0.8 and l["n"] <= 8:
+        return True
+    # zentrierte kurze Zeile ohne Satzzeichen am Ende (Titel in Gross-/Kleinschreibung, z.B. «Hama gul»)
+    if rand and len(letters) >= 3 and l["n"] <= 5 and letters[0].isupper() \
+            and not re.search(r"[.,!?;:…»\"]\s*$", l["text"]):
+        links, rechts = rand
+        breite = rechts - links
+        if breite > 0 and l["left"] - links > 0.2 * breite and rechts - l["right"] > 0.2 * breite \
+                and abs((l["left"] + l["right"]) / 2 - (links + rechts) / 2) < 0.08 * breite:
+            return True
+    return False
 
 def norm(s):
     return re.sub(r"[^а-яёғӣқӯҳҷ]", "", s.lower())
@@ -104,6 +120,9 @@ def stream(ordner, pages, toc_pages, versatz=None, weg=()):
         ev.append(("PAGE", "", p))
         gaps = [b["top"] - a["top"] for a, b in zip(ls, ls[1:])]
         step = statistics.median(gaps) if gaps else 0
+        vz = [l for l in ls if l["good"] >= 2]
+        rand = (min(l["left"] for l in vz), max(l["right"] for l in vz)) \
+            if len(vz) >= 4 and ordner in ZENTRIERTE_TITEL else None
         prev_top = None
         for i, l in enumerate(ls):
             t = l["text"].strip()
@@ -122,6 +141,8 @@ def stream(ordner, pages, toc_pages, versatz=None, weg=()):
             if re.match(r"^\s*\S?\s*([хХxX*жЖ]\s*){2,3}\W*$", t) or re.match(r"^\s*[«»]\s*[хХxX][еЕe]?\s*$", t) \
                     or (re.fullmatch(r"[\s*жЖхХоОеЕйxX.«»]+", t) and 2 <= len(re.sub(r"[\s.*«»]", "", t)) <= 5):
                 ev.append(("BREAK", "sterne", p)); prev_top = None; continue   # * * * als "3 хх"
+            if ordner in KURZZEILE_TRENNT and l["n"] <= 2 and len(re.findall(rf"[{CYRL}]", t)) <= 6:
+                ev.append(("BREAK", "sterne", p)); prev_top = None; continue   # Vierzeilerband: Kurzzeile = Zierstern
             if re.match(r"^\s*[-—–]", t) and re.search(r"[-—–]{2,}\s*$|»\s*[-—–]", t) and l["good3"] <= 1:
                 continue                           # Fusszierleiste mit Seitenzahl: still verwerfen
             if re.search(rf"[{CYRL}]{{18,}}", t) and l["good3"] <= 1:
@@ -135,7 +156,7 @@ def stream(ordner, pages, toc_pages, versatz=None, weg=()):
                 noise = True                       # Ornament mit Ghaselnummer ueber dem Text
             if noise:
                 ev.append(("BREAK", "ornament", p)); prev_top = None; continue
-            if is_title(l):
+            if is_title(l, rand):
                 if l["good3"] >= 1 and l["conf"] >= 60:
                     ev.append(("TITLE", t, p)); prev_top = l["top"]
                 else:

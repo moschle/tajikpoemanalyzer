@@ -29,6 +29,8 @@ def main():
                 continue
             if not m and len(re.findall(r"[ъз]", titel)) > 6:
                 continue                      # reine Leiterzeile
+            if max((len(w) for w in titel.split()), default=0) > 18 or len(titel.split()) < 2 and not m:
+                continue                      # Ornament- oder Leiterrauschen
             zeilen.append(f"{seite}|{titel}")
     Path(aus).write_text("\n".join(zeilen) + "\n", encoding="utf-8")
     print(len(zeilen), "Eintraege")
