@@ -101,7 +101,8 @@ the library schema that was never populated. Nothing imported it.
 - `analyzer.py` — core analysis (to be split into a package; see Roadmap)
 - `knowledge_export.py` — feature export / snapshot / restore
 - `pages/` — Streamlit UI (1 Analyze, 2 Library, 3 Visualize, 4 Corpus, 5 Export)
-- `scripts/` — one-off maintenance scripts (batch migration, history purge)
+- `scripts/` — maintenance scripts (batch migration, history purge) and the OCR pipeline
+  (`ocr_tesseract.py`; Farzona worked example: `ocr_farzona*.py`, `farzona_*.py`)
 - `experimental/` — unwired prototypes (Flask API, network analysis, MARC21 export,
   integration demo). Not imported by the app.
 
@@ -155,11 +156,30 @@ Poems must be provided as **UTF-8 .txt files**, separated by `*****`:
 дар имтидоди ғамгини зиндагӣ
 ```
 
-### ⚠️ PDF Note
-Automatic OCR for Tajik Cyrillic is unreliable. Recommendation:
-1. Upload PDF to Claude/ChatGPT
-2. Request transcription with `*****` as separator
-3. Save as .txt
+### From PDF to text: two ways
+
+**A. Local OCR with Tesseract (texts stay on your machine).** Tesseract ships a Tajik
+model (`tgk`) that reads printed Tajik Cyrillic far better than the text layers embedded
+in most scanned PDFs or the Russian model.
+
+```bash
+brew install tesseract tesseract-lang poppler      # macOS; Linux: tesseract-ocr-tgk, poppler-utils
+python scripts/ocr_tesseract.py VOLUME.pdf ocr/volume/
+python scripts/ocr_tesseract.py VOLUME.pdf ocr/volume/ --crop 0.13,0.06,0.11,0.09   # ornamental frames
+```
+
+Per page you get `pNNNN.txt` and `pNNNN.tsv` (word boxes with confidence), plus
+`quality.csv` and the whole volume as `volume.txt`. Mean confidence on clean prints is
+around 90–95 %. Check pages below ~70: they usually have decorative frames (use `--crop`)
+or faint scans. Splitting pages into poems is a separate, book-specific step;
+`scripts/farzona_split.py` is a worked example. It uses the table of contents as anchors,
+recognises ornaments, running heads, footnotes, rubāʿī and ghazal boundaries, and reads a
+corrections file from page-by-page review.
+
+**B. Transcription by a language model.** Upload the PDF to Claude or ChatGPT and ask
+for a transcription with `*****` as separator, then save it as .txt. This is convenient
+for a single volume, but the full text leaves your machine. Check the data policy above
+before using it with copyrighted books.
 
 ---
 
@@ -273,11 +293,22 @@ streamlit run ui.py
 дар имтидоди ғамгини зиндагӣ
 ```
 
-### ⚠️ Тавсия оид ба PDF
-OCR худкори барои ҳуруфи кириллии тоҷикӣ нисбатан номуътамад аст. Тавсия:
-1. PDF-ро ба Claude/ChatGPT бор кунед
-2. Транскрипсиони бо ҷудокундаи `*****` талаб кунед
-3. Ҳамчун .txt захира кунед
+### Аз PDF ба матн: ду роҳ
+
+**A. OCR-и маҳаллӣ бо Tesseract (матнҳо дар компютери шумо мемонанд).** Tesseract
+модели тоҷикӣ (`tgk`) дорад, ки ҳуруфи кириллии тоҷикиро хеле беҳтар мехонад.
+
+```bash
+python scripts/ocr_tesseract.py VOLUME.pdf ocr/volume/
+python scripts/ocr_tesseract.py VOLUME.pdf ocr/volume/ --crop 0.13,0.06,0.11,0.09   # ҳошияҳои нақшин
+```
+
+Барои ҳар саҳифа `pNNNN.txt` ва `pNNNN.tsv`, инчунин `quality.csv` ва `volume.txt` сохта
+мешаванд. Ҷудо кардани шеърҳо қадами алоҳида аст; намуна: `scripts/farzona_split.py`.
+
+**B. Транскрипсия бо модели забонӣ.** PDF-ро ба Claude/ChatGPT бор кунед ва
+транскрипсияро бо ҷудокунандаи `*****` талаб кунед. Дар ин ҳол матни пурра аз
+компютери шумо берун меравад.
 
 ---
 
