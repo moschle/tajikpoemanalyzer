@@ -106,3 +106,6 @@ uploads/
 
 # OCR-Volltexte (urheberrechtlich geschützt, nie online)
 data/ocr_farzona/
+
+# Korpus-Sicherungen mit Volltexten
+tajik_corpus/corpus/*.json
