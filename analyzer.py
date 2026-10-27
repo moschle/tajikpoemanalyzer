@@ -3728,6 +3728,17 @@ class EnhancedRadifDetector:
         self.phonetics = PersianTajikPhonetics()
         self.logger = logging.getLogger(f"{__name__}.EnhancedRadifDetector")
     
+    # Printed ghazals end hemistichs with punctuation ("худро," / "худро.");
+    # compare on the bare text and at a word boundary.
+    _TRAIL = " ,;:!?.…—–-»«“”" + chr(34) + chr(39)
+
+    def _bare(self, line: str) -> str:
+        return line.strip().rstrip(self._TRAIL)
+
+    def _ends(self, line: str, radif: str) -> bool:
+        bare = self._bare(line)
+        return bool(radif) and (bare == radif or bare.endswith(' ' + radif))
+
     def detect_radif_pattern(self, poem_content: str) -> RadifAnalysis:
         """Detect Radīf pattern and prepare corrected lines for meter analysis."""
         lines = [line.strip() for line in poem_content.split('\n') if line.strip()]
@@ -3743,7 +3754,7 @@ class EnhancedRadifDetector:
 
         # Safety net: discard "radifs" that occur on fewer than 2 lines.
         if best_radif:
-            occurrence = sum(1 for line in lines if line.strip().endswith(best_radif))
+            occurrence = sum(1 for line in lines if self._ends(line, best_radif))
             if occurrence < 2:
                 best_radif = ""
 
@@ -3755,12 +3766,12 @@ class EnhancedRadifDetector:
             # Find which lines have the radif
             lines_with_radif_indices = [
                 i for i, line in enumerate(lines) 
-                if line.strip().endswith(best_radif)
+                if self._ends(line, best_radif)
             ]
             
             lines_without_radif_indices = [
                 i for i, line in enumerate(lines) 
-                if not line.strip().endswith(best_radif)
+                if not self._ends(line, best_radif)
             ]
             
             self.logger.info(f"Detected Radīf: '{best_radif}' in {radif_frequency:.0%} of lines")
@@ -3826,7 +3837,7 @@ class EnhancedRadifDetector:
             word_count = len(radif.split())
             score = count / len(lines) * (1.5 / word_count)
             
-            line_end_count = sum(1 for line in lines if line.strip().endswith(radif))
+            line_end_count = sum(1 for line in lines if self._ends(line, radif))
             line_end_bonus = line_end_count / len(lines)
             score += line_end_bonus
             
@@ -3845,8 +3856,9 @@ class EnhancedRadifDetector:
         
         for line in lines:
             line = line.strip()
-            if line.endswith(radif):
-                cleaned = line[:-len(radif)].rstrip(' ,;:!?.—–-')
+            if self._ends(line, radif):
+                bare = self._bare(line)
+                cleaned = bare[:-len(radif)].rstrip(' ,;:!?.—–-')
                 cleaned_lines.append(cleaned.strip())
             else:
                 cleaned_lines.append(line)
@@ -3857,7 +3869,7 @@ class EnhancedRadifDetector:
         """Calculate frequency of Radīf appearance."""
         if not lines or not radif:
             return 0.0
-        count = sum(1 for line in lines if line.strip().endswith(radif))
+        count = sum(1 for line in lines if self._ends(line, radif))
         return count / len(lines)
 
 
