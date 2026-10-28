@@ -41,25 +41,77 @@ METREN = [
     ("rubāʿī (akhram)", "LLL LLS SLLS SL"),
 ]
 
+METREN += [
+    ("ramal musamman makhbūn aṣlam", "LSLL SSLL SSLL LL"),
+    ("ramal musamman makhbūn aṣlam", "SSLL SSLL SSLL LL"),
+    ("ramal musaddas makhbūn aṣlam", "SSLL SSLL LL"),
+    ("mujtathth musamman makhbūn aṣlam", "SLSL SSLL SLSL LL"),
+    ("khafīf musaddas makhbūn aṣlam", "LSLL SLSL LL"),
+    ("khafīf musaddas makhbūn aṣlam", "SSLL SLSL LL"),
+    ("muḍāriʿ murabbaʿ akhrab", "LLS LSLL"),
+    ("hazaj murabbaʿ sālim", "SLLL SLLL"),
+    ("ramal murabbaʿ sālim", "LSLL LSLL"),
+    ("hazaj musamman maḥdhūf", "SLLL SLLL SLLL SLL"),
+    ("hazaj musaddas sālim", "SLLL SLLL SLLL"),
+    ("rajaz murabbaʿ sālim", "LLSL LLSL"),
+    ("rajaz musaddas sālim", "LLSL LLSL LLSL"),
+]
+
+
+def _rubai():
+    """Die 24 Rubai-Varianten als Schema: LL SS LL SS LL SS L; jedes SS darf zu L werden,
+    das mittlere LSS (mafaʿilu) darf als SLS (mafaʿilun) stehen."""
+    return sorted({"LL" + a + m + "LL" + c + "L"
+                   for a in ("SS", "L") for m in ("LLSS", "LLL", "LSLS") for c in ("SS", "L")})
+
+
+METREN = [m for m in METREN if not m[0].startswith("rubāʿī")] + \
+    [("rubāʿī", r) for r in _rubai()]
 MUSTER = [(n, m.replace(" ", "")) for n, m in METREN]
 
 
-def bestes_metrum(silben):
-    """silben: Folge aus 'L', 'S', 'u' (offene Silbe mit i/u: kurz oder lang), 'X' (frei).
+def _passung(silben, m):
+    """Beste Summe der Positionstreffer; 'o' = optionale Kurzsilbe (fehlt oder S)."""
+    from functools import lru_cache
+    n, k = len(silben), len(m)
 
-    Rueckgabe (name, genauigkeit) des besten Musters gleicher Laenge oder (None, 0.0).
+    @lru_cache(maxsize=None)
+    def f(i, j):
+        if j == k:
+            return 0.0 if all(x == "o" for x in silben[i:]) else None
+        if i == n:
+            return None
+        s = silben[i]
+        best = None
+        if s == "o":
+            r = f(i + 1, j)
+            best = r
+            s = "S"
+        sc = 1.0 if (j == k - 1 or s == "X" or s == m[j]) else (0.9 if s == "u" else 0.0)
+        r = f(i + 1, j + 1)
+        if r is not None and (best is None or r + sc > best):
+            best = r + sc
+        return best
+    return f(0, 0)
+
+
+def bestes_metrum(silben):
+    """silben: Folge aus 'L', 'S', 'u' (offene Silbe mit i/u: kurz oder lang), 'X' (frei),
+    'o' (moegliche Ueberlaenge nach geschlossenem i/u: Kurzsilbe optional).
+
+    Rueckgabe (name, genauigkeit) des besten Musters oder (None, 0.0).
     """
+    silben = tuple(silben)
+    fest = sum(1 for x in silben if x != "o")
+    opt = len(silben) - fest
     best, acc = None, 0.0
     for name, m in MUSTER:
-        if len(m) != len(silben):
+        if not fest <= len(m) <= fest + opt:
             continue
-        ok = 0.0
-        for i, (s, p) in enumerate(zip(silben, m)):
-            if i == len(m) - 1 or s == "X" or s == p:
-                ok += 1
-            elif s == "u":
-                ok += 0.9          # i/u offen: Laenge im Tadschikischen nicht geschrieben
-        a = ok / len(m)
+        r = _passung(silben, m)
+        if r is None:
+            continue
+        a = r / len(m)
         if a > acc:
             best, acc = name, a
     return best, acc

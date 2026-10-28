@@ -1,0 +1,329 @@
+{
+ "beschreibung": "Handskandierte Stichproben Farzona (je 40 Gedichte, Zufallsziehung mit Seed). Label = Versmassfamilie oder 'frei' (inkl. Nimaʾi), '?' = unklar. Seed 2026 = Entwicklungsstichprobe, Seed 7 = zurueckgehaltene Teststichprobe. Nur IDs, keine Texte.",
+ "stichproben": {
+  "2026": [
+   {
+    "id": "P0605",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1426",
+    "label": "ruba"
+   },
+   {
+    "id": "P2176",
+    "label": "ruba"
+   },
+   {
+    "id": "P2214",
+    "label": "ruba"
+   },
+   {
+    "id": "P0538",
+    "label": "mujtathth"
+   },
+   {
+    "id": "P1032",
+    "label": "ruba"
+   },
+   {
+    "id": "P2397",
+    "label": "khafif"
+   },
+   {
+    "id": "P1840",
+    "label": "ramal"
+   },
+   {
+    "id": "P2463",
+    "label": "ramal"
+   },
+   {
+    "id": "P2361",
+    "label": "ramal"
+   },
+   {
+    "id": "P2128",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1924",
+    "label": "frei"
+   },
+   {
+    "id": "P1100",
+    "label": "ruba"
+   },
+   {
+    "id": "P0128",
+    "label": "frei"
+   },
+   {
+    "id": "P0448",
+    "label": "frei"
+   },
+   {
+    "id": "P0571",
+    "label": "?"
+   },
+   {
+    "id": "P1294",
+    "label": "sari"
+   },
+   {
+    "id": "P0519",
+    "label": "mudari"
+   },
+   {
+    "id": "P1959",
+    "label": "ruba"
+   },
+   {
+    "id": "P0165",
+    "label": "frei"
+   },
+   {
+    "id": "P2126",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1405",
+    "label": "ruba"
+   },
+   {
+    "id": "P0979",
+    "label": "frei"
+   },
+   {
+    "id": "P1745",
+    "label": "mudari"
+   },
+   {
+    "id": "P1148",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1542",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1578",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1659",
+    "label": "sari"
+   },
+   {
+    "id": "P2221",
+    "label": "ruba"
+   },
+   {
+    "id": "P0430",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1512",
+    "label": "hazaj"
+   },
+   {
+    "id": "P0485",
+    "label": "rajaz"
+   },
+   {
+    "id": "P2401",
+    "label": "mudari"
+   },
+   {
+    "id": "P2321",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1314",
+    "label": "sari"
+   },
+   {
+    "id": "P1296",
+    "label": "khafif"
+   },
+   {
+    "id": "P1991",
+    "label": "ruba"
+   },
+   {
+    "id": "P0695",
+    "label": "mudari"
+   },
+   {
+    "id": "P2483",
+    "label": "ramal"
+   },
+   {
+    "id": "P1383",
+    "label": "ruba"
+   }
+  ],
+  "7": [
+   {
+    "id": "P1444",
+    "label": "ruba"
+   },
+   {
+    "id": "P0735",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1735",
+    "label": "mudari"
+   },
+   {
+    "id": "P0315",
+    "label": "mujt"
+   },
+   {
+    "id": "P0414",
+    "label": "frei"
+   },
+   {
+    "id": "P2312",
+    "label": "hazaj"
+   },
+   {
+    "id": "P0503",
+    "label": "frei"
+   },
+   {
+    "id": "P1615",
+    "label": "hazaj"
+   },
+   {
+    "id": "P2505",
+    "label": "ramal"
+   },
+   {
+    "id": "P0355",
+    "label": "mudari"
+   },
+   {
+    "id": "P2196",
+    "label": "ruba"
+   },
+   {
+    "id": "P0997",
+    "label": "frei"
+   },
+   {
+    "id": "P0271",
+    "label": "?"
+   },
+   {
+    "id": "P0470",
+    "label": "frei"
+   },
+   {
+    "id": "P1894",
+    "label": "frei"
+   },
+   {
+    "id": "P1830",
+    "label": "khafif"
+   },
+   {
+    "id": "P0404",
+    "label": "frei"
+   },
+   {
+    "id": "P1103",
+    "label": "hazaj"
+   },
+   {
+    "id": "P0489",
+    "label": "?"
+   },
+   {
+    "id": "P2375",
+    "label": "hazaj"
+   },
+   {
+    "id": "P1856",
+    "label": "frei"
+   },
+   {
+    "id": "P0360",
+    "label": "mudari"
+   },
+   {
+    "id": "P2434",
+    "label": "frei"
+   },
+   {
+    "id": "P0625",
+    "label": "mujt"
+   },
+   {
+    "id": "P1032",
+    "label": "ruba"
+   },
+   {
+    "id": "P0371",
+    "label": "mudari"
+   },
+   {
+    "id": "P2481",
+    "label": "mujt"
+   },
+   {
+    "id": "P1742",
+    "label": "mudari"
+   },
+   {
+    "id": "P0321",
+    "label": "mudari"
+   },
+   {
+    "id": "P1023",
+    "label": "ruba"
+   },
+   {
+    "id": "P0308",
+    "label": "rajaz"
+   },
+   {
+    "id": "P2398",
+    "label": "hazaj"
+   },
+   {
+    "id": "P0663",
+    "label": "frei"
+   },
+   {
+    "id": "P1304",
+    "label": "frei"
+   },
+   {
+    "id": "P1834",
+    "label": "sari"
+   },
+   {
+    "id": "P0708",
+    "label": "hazaj"
+   },
+   {
+    "id": "P2332",
+    "label": "hazaj"
+   },
+   {
+    "id": "P0600",
+    "label": "?"
+   },
+   {
+    "id": "P2456",
+    "label": "mujt"
+   },
+   {
+    "id": "P1381",
+    "label": "ruba"
+   }
+  ]
+ }
+}

@@ -2308,16 +2308,33 @@ class AruzMeterAnalyzer:
         long_v = self.phonology.long_vowels
         sym = []
         n = len(syllable_tuples)
-        for i, ((_, syl), w) in enumerate(zip(syllable_tuples, weights)):
-            s = self.phonology._decompose_syllable(unicodedata.normalize('NFC', syl.strip().lower()))
+        dec = [self.phonology._decompose_syllable(unicodedata.normalize('NFC', syl.strip().lower()))
+               for _, syl in syllable_tuples]
+        regeln = os.environ.get("TPA_OHNE_VASL") != "1"
+        for i, ((pos, syl), w) in enumerate(zip(syllable_tuples, weights)):
+            s = dec[i]
+            nxt = dec[i + 1] if i + 1 < n else None
+            vok_folgt = nxt is not None and not getattr(nxt, "onset", "x")
+            wortende = i + 1 < n and syllable_tuples[i + 1][0] != pos + len(syl)
             if i == n - 1:
                 sym.append("X")
+            elif regeln and vok_folgt and s is not None and not s.is_diphthong and len(s.coda) >= 1 \
+                    and wortende:
+                # Vasl: Schlusskonsonant bindet an den vokalischen Anlaut des Folgeworts
+                long_nuc = s.is_long_vowel or s.nucleus in long_v
+                sym.append("L" if (long_nuc or len(s.coda) >= 2) else "S")
+            elif regeln and vok_folgt and s is not None and not s.coda and w == SyllableType.LIGHT:
+                # Hiat (verlorenes ʿayn/hamza, Izafa nach -ī): Laenge offen
+                sym.append("u")
             elif w == SyllableType.HEAVY:
                 sym.append("L")
                 if s is not None and not s.is_diphthong:
                     long_nuc = s.is_long_vowel or s.nucleus in long_v
                     if (long_nuc and s.coda and s.coda != 'н') or len(s.coda) >= 2:
                         sym.append("S")
+                    elif regeln and s.nucleus in ('и', 'у') and len(s.coda) == 1 and s.coda != 'н':
+                        # i/u kann ungeschriebenes ī/ū sein (pīr, nīz): Ueberlaenge offen
+                        sym.append("o")
             elif w == SyllableType.LIGHT:
                 sym.append("u" if s is not None and not s.coda and s.nucleus in ('и', 'у') else "S")
             else:
@@ -4043,6 +4060,19 @@ class StructuralAnalyzer:
         prosodic_consistency = self._calculate_prosodic_consistency(line_analyses)
 
         meters = [la['aruz'] for la in line_analyses]
+        if os.environ.get("TPA_OHNE_ZEILENVERBUND") != "1":
+            # Printed verse is often broken typographically ("staircase"): a line that starts
+            # with a lowercase letter continues the previous one. Scan the joined hemistichs
+            # for the poem's metre.
+            joined = []
+            for l in clean_lines:
+                first = next((c for c in l if c.isalpha()), "")
+                if joined and first and first.islower():
+                    joined[-1] = joined[-1].rstrip() + " " + l.strip()
+                else:
+                    joined.append(l.strip())
+            if len(joined) < len(clean_lines):
+                meters = [self.aruz_analyzer.analyze_meter(l) for l in joined]
         overall_aruz = self._determine_overall_meter(meters)
 
         return StructuralAnalysis(
@@ -4139,6 +4169,7 @@ class StructuralAnalyzer:
 
     def _determine_overall_meter(self, meters: List[AruzAnalysis]) -> AruzAnalysis:
         """Determine overall meter"""
+        self._meter_anteil = 1.0
         if not meters:
             return AruzAnalysis(
                 identified_meter="unknown",
@@ -4162,6 +4193,7 @@ class StructuralAnalyzer:
             if not sicher or sicher.most_common(1)[0][1] < max(2, 0.4 * len(meters)):
                 return self._determine_overall_meter([])
             top = sicher.most_common(1)[0][0]
+            self._meter_anteil = sicher[top] / len(meters)
             return max((m for m in meters if m.identified_meter == top), key=lambda m: m.pattern_accuracy)
         meter_counts = Counter(m.identified_meter for m in meters)
         most_common = meter_counts.most_common(1)[0][0]
@@ -4703,6 +4735,20 @@ class EnhancedTajikPoemAnalyzer:
             structural,
             modern_metrics
         )
+        # A securely identified metre (>= 40 % of lines, see _determine_overall_meter)
+        # outranks the free-verse classifier. Old behaviour: TPA_FREI_UEBERSCHREIBT=1.
+        # Nimaʾi poems (metrical lines of varying length) keep the free-verse label: the metre
+        # must cover >= 60 % of the lines to outrank the classifier.
+        if os.environ.get("TPA_FREI_UEBERSCHREIBT") != "1" and \
+                structural.aruz_analysis.identified_meter not in ("unknown", "", None):
+            # Nimaʾi: metrical lines of strongly varying length (after re-joining staircase
+            # lines) are free verse on a metrical base; the metre stays recorded.
+            is_free_verse = self._ist_nimai(clean_content) or \
+                getattr(self.structural_analyzer, "_meter_anteil", 1.0) < 0.6 and is_free_verse
+        elif os.environ.get("TPA_FREI_UEBERSCHREIBT") != "1" and is_free_verse and \
+                self._laengen_abweichung(clean_content) < 0.1:
+            # isometric lines without a detected metre: detection failure, not free verse
+            is_free_verse = False
 
         # Enhance structural analysis
         enhanced_structural = self._enhance_structural_analysis(
@@ -4729,6 +4775,31 @@ class EnhancedTajikPoemAnalyzer:
         analysis.quality_metrics = validation
 
         return analysis
+
+    @staticmethod
+    def _ist_nimai(text: str) -> bool:
+        """>= 20 % of the (re-joined) lines deviate by more than 30 % from the median length."""
+        return EnhancedTajikPoemAnalyzer._laengen_abweichung(text) >= 0.2
+
+    @staticmethod
+    def _laengen_abweichung(text: str) -> float:
+        """Share of (re-joined) lines whose vowel count deviates > 30 % from the median."""
+        vok = set("аеиоуӯӣяюёэ")
+        joined = []
+        for l in (x.strip() for x in text.split("\n")):
+            if not l:
+                continue
+            f = next((c for c in l if c.isalpha()), "")
+            if joined and f and f.islower():
+                joined[-1] += " " + l
+            else:
+                joined.append(l)
+        n = [sum(c in vok for c in l.lower()) for l in joined]
+        n = [x for x in n if x]
+        if len(n) < 5:
+            return 0.0 if len(n) < 2 else 0.1
+        med = sorted(n)[len(n) // 2]
+        return sum(abs(x - med) > 0.3 * med for x in n) / len(n)
 
     def _enhance_structural_analysis(self, structural: StructuralAnalysis,
                                    modern_metrics: ModernVerseMetrics,

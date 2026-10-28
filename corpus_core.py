@@ -33,6 +33,7 @@ Design rules
 from __future__ import annotations
 
 import hashlib
+import os
 import json
 import logging
 import re
@@ -438,7 +439,10 @@ def extract_features(analysis: Dict) -> Dict:
     meter = clean_enum(aruz.get("identified_meter") or "unknown")
     form = clean_enum(structural.get("stanza_structure") or "unknown")
 
-    if meter and meter != "unknown":
+    if structural.get("is_free_verse") is True and os.environ.get("TPA_ALTER_STATUS") != "1":
+        # free verse wins; a recognised metre stays in 'meter' as the metrical base (Nimaʾi)
+        meter_status = "free_verse"
+    elif meter and meter != "unknown":
         meter_status = "identified"
     elif form in ("free_verse", "free verse"):
         meter_status = "free_verse"
