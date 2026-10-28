@@ -444,7 +444,8 @@ def extract_features(analysis: Dict) -> Dict:
         meter_status = "free_verse"
     elif meter and meter != "unknown":
         meter_status = "identified"
-    elif form in ("free_verse", "free verse"):
+    elif form in ("free_verse", "free verse") and (structural.get("is_free_verse") is not False
+                                                  or os.environ.get("TPA_ALTER_STATUS") == "1"):
         meter_status = "free_verse"
     else:
         meter_status = "detection_failed"

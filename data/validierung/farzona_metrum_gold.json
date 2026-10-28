@@ -4,325 +4,405 @@
   "2026": [
    {
     "id": "P0605",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "d8dddeb235a5afe9e3acc98c2da006ba75a2e5b94b2b9f7a500102d96cebcc75"
    },
    {
     "id": "P1426",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "67bdfb59a7304b25d84dc8c9b67f4f9ec259c316d8dab13de61cfdfd32b48461"
    },
    {
     "id": "P2176",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "8ed1c6d98b133685967b5ec161bdf1e718ffc1f34265f8bf49cb3f374039b7f5"
    },
    {
     "id": "P2214",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "15f3bdd143d207b17de89ca096596bb76054c35819ecac9da738884a356cc760"
    },
    {
     "id": "P0538",
-    "label": "mujtathth"
+    "label": "mujtathth",
+    "sha256": "e3ab8ee164d9b4f68eeeb4501cadb3c412bb78decc98e42fc543d39a299ac614"
    },
    {
     "id": "P1032",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "f230995cac412f37b11080b2fcbd0c32c2b3bffceddf5d3b56b53be5d7590ab8"
    },
    {
     "id": "P2397",
-    "label": "khafif"
+    "label": "khafif",
+    "sha256": "3d05f6a4be940bb41b55320cf782bc28990c1571b6cf4cc1e7f68bc90919e019"
    },
    {
     "id": "P1840",
-    "label": "ramal"
+    "label": "ramal",
+    "sha256": "a6a9c16951c290e5329dd3e56a53089e9ed466c2472844eb87eab31d1b20769c"
    },
    {
     "id": "P2463",
-    "label": "ramal"
+    "label": "ramal",
+    "sha256": "a4806dfbb421505540ebd3217359e687c729a5cc127dce5f8d23115b48e2130d"
    },
    {
     "id": "P2361",
-    "label": "ramal"
+    "label": "ramal",
+    "sha256": "90d9412c570f1ffe86129746c04642d6ed1aa71e6316ea62fe7644181c378eb0"
    },
    {
     "id": "P2128",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "2079967bb461a2668beb8aea9e1f6786263bd59e47f8b34b78530a9c4f77ac5a"
    },
    {
     "id": "P1924",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "33e2f70d2346d051b8a3974990d0f18b389541bbcd8921c3ad07c734f8ed3d00"
    },
    {
     "id": "P1100",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "f82737c1938ac09e7f10d8b324ba59ff319467e22dd112739a01c16bd4018f5e"
    },
    {
     "id": "P0128",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "531d33949b099527bab1416f4748d9a3a936949b3710fec5cee445c031891e51"
    },
    {
     "id": "P0448",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "b2e408d23e4847b3a3c0528a703f5efdc3c1e6b2bdf8f6aa7b349148ed1b3081"
    },
    {
     "id": "P0571",
-    "label": "?"
+    "label": "?",
+    "sha256": "e8b1eb4102e00a3fdf2b65546630a406fe086b4ba1e25d56d0aff990e19742e8"
    },
    {
     "id": "P1294",
-    "label": "sari"
+    "label": "sari",
+    "sha256": "dcb40b40f0809a2a63bc2bd294975d3ba7fc7e8cbd0190c13f96ba4af5a027be"
    },
    {
     "id": "P0519",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "18b97749d708659bc0f9c0bc8b366f2a010b821f47fa3cf7e55492673d3ed6e4"
    },
    {
     "id": "P1959",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "e8ffd270be6b26ddf6b2daba619454ef53a16b6a3f48a9f27dcf6eae691272f0"
    },
    {
     "id": "P0165",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "0e5ed4496c0e4e677baa9c432c9aded6ba9c8854f7b815ce972fe2ee365d4c0c"
    },
    {
     "id": "P2126",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "8f1ae8660b00c4f1683919c136ff693ff24f8ea0aaafe3e8b2e39801eb86733f"
    },
    {
     "id": "P1405",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "dc5f193d47c87267078229ee1b3107e5fe2a209768bb0b6a3e3984fca8095258"
    },
    {
     "id": "P0979",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "c1afc77f50789b526256048bb98b5e0f1d5189180a24afe2115fa849d06fe1f7"
    },
    {
     "id": "P1745",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "39eab7b1135a3906dff0d776a4e7a5046aa86cf0c9e6d1cac83e455e9d1ba443"
    },
    {
     "id": "P1148",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "b192b6ed16c1287d6f29ebe0a804162a4617ea75037ac12fcdce000bcffdd2f6"
    },
    {
     "id": "P1542",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "7ce2cf3059ff78ec065ee86d0d5155e37c5ae355b45d88d5c412a233263cc01d"
    },
    {
     "id": "P1578",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "aa0e660c587b41e845dddb2f5f333db5c8a342ba589602965db687af9bd5c273"
    },
    {
     "id": "P1659",
-    "label": "sari"
+    "label": "sari",
+    "sha256": "6265c0d89d63b9323c150379ae993d0ff29ed2d1fd84caaf744c1dd31d96784e"
    },
    {
     "id": "P2221",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "ec3a066e83ea5e82f3ca61a9938ddced26626ececee3ba86eba4e4d53a1b0543"
    },
    {
     "id": "P0430",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "2eab15203f8e1aeadbf0a08f5676a382333087a8341a7b64eaa4a5c5d39785a3"
    },
    {
     "id": "P1512",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "d26fb1801e1da6dc722f9b0f16bfa1ef39d94215abc69d6075173aeeb10f39e4"
    },
    {
     "id": "P0485",
-    "label": "rajaz"
+    "label": "rajaz",
+    "sha256": "d959eca845a43d36f29130e47c4cb806c290f77345eff928f718f2acc8252104"
    },
    {
     "id": "P2401",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "18f2b1bf8053b903e31a60914e38c121def16c333d56149e5e703d3f48680e5d"
    },
    {
     "id": "P2321",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "61931d45af6e0776f08e54dc36228ec7ae68922eb1d04d9da52d742ab77b948e"
    },
    {
     "id": "P1314",
-    "label": "sari"
+    "label": "sari",
+    "sha256": "11154cd65aa865912518000e821c47939d808de48a7d8f32a86c82c8ab752d0b"
    },
    {
     "id": "P1296",
-    "label": "khafif"
+    "label": "khafif",
+    "sha256": "d8a180a46b842b1c5360b24f3770babe0837aa3398f7e5c0d405f58a609242e7"
    },
    {
     "id": "P1991",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "3ead7c40e5df8f6bae7b3aff5b7c2307b842a386c9bc64255a88e2cd84d46352"
    },
    {
     "id": "P0695",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "4a11997ec18ec01bc7cbc02c1de0e66ff40c2bdcdfcc99103c771561ef7082de"
    },
    {
     "id": "P2483",
-    "label": "ramal"
+    "label": "ramal",
+    "sha256": "4b29d09e16967ccb6f59f6dd0a5ae9d3016816d3ca1449617b313746bc7f97ec"
    },
    {
     "id": "P1383",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "7ed790090ea50810f1fdcc13f9f4b324e5d6db2ce4c222a6481a247295a7f97c"
    }
   ],
   "7": [
    {
     "id": "P1444",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "b2ac73a29da1c81f99e48b83be4355f3f18b9abef83fe165ac36bfcb2c336928"
    },
    {
     "id": "P0735",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "9af5d8bb3f8d5402a18ebcd94311b10bd083de401cbfaac17e0b9445b6c13c36"
    },
    {
     "id": "P1735",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "3506f29440e53a962983aec1f1992c5b723fbdfd6114dd9cf5be9cd5b3a9b772"
    },
    {
     "id": "P0315",
-    "label": "mujt"
+    "label": "mujt",
+    "sha256": "0ebdedc034b4facdd3494fc412db8531f1d30f27a35e30c5025b19bc88bf275f"
    },
    {
     "id": "P0414",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "a652612caab2b5bd3f7d7d87a3570b673e69cc76640f31a8a34386aeeca2952e"
    },
    {
     "id": "P2312",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "d247f79ab3ee99c0f9da46bcf13c5eb3807962b4c7d552977d68f62519a372f1"
    },
    {
     "id": "P0503",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "c8db1b381f38ab846f1d7920aa5a451e7689b5527aec7252bef050e5d1a474be"
    },
    {
     "id": "P1615",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "ffc4c881fbb8094d7fde7a5d302bdec03b1b22a015b2bf53ef14bef59b130e86"
    },
    {
     "id": "P2505",
-    "label": "ramal"
+    "label": "ramal",
+    "sha256": "463925f3d11a77121e703ea528fe0eb1c2b4c6badfbc3c9c91ac27a99fcfd4a1"
    },
    {
     "id": "P0355",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "94edcb65e842d00fd0a3bf82e1145e75893695f810ceb44316ccb513ed0a9d85"
    },
    {
     "id": "P2196",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "c11085f81de4e12ca7fffb9ee883a3c91ece673487e62c4f44a604e591693fce"
    },
    {
     "id": "P0997",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "d2ed0eb358352bba64636d39739e519192a551a27f83a5ff494d6a6eb19a459e"
    },
    {
     "id": "P0271",
-    "label": "?"
+    "label": "?",
+    "sha256": "6eafa505baefe9aa0fb42d6bac0e3837ebce417090a359ab882d3ce81d1ab3f5"
    },
    {
     "id": "P0470",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "5c5e9ef4156d833fb3641abd5edca6ae56999f77c12c79b9f3a4e132c5bb57ec"
    },
    {
     "id": "P1894",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "1ee1ac0f1935a2b4a4a98ec69f16228bec139b731bffccb6d658e2fd81f988e7"
    },
    {
     "id": "P1830",
-    "label": "khafif"
+    "label": "khafif",
+    "sha256": "690f5e709844f59dd78bf7786061d6252949ec6063a1921380c708e516a0d922"
    },
    {
     "id": "P0404",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "6bbed552564fd709089ff058313fed13c21e95d6e7fb4bbe61c350c24f27b490"
    },
    {
     "id": "P1103",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "2582ed8014e747fd28a4dcf6b8c7fa912149f4f9cdc132edf887a6c851caac46"
    },
    {
     "id": "P0489",
-    "label": "?"
+    "label": "?",
+    "sha256": "e082b7d9a07898f4e6a400e743f0490a8593bedb31d6deb440125fcdf15ca2fd"
    },
    {
     "id": "P2375",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "896d9491b31caa3e6e343610147e31ac988ecab7130ce7a182780c01f0b3ce22"
    },
    {
     "id": "P1856",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "2d040d5f2cb7b67b2efa4c11578671e4aaa1da4ffa4b4135d32570d3627e5891"
    },
    {
     "id": "P0360",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "d6fd7304c1d296eb905718d04a386ceff28659cd0b9b5d051acb2354242d12cb"
    },
    {
     "id": "P2434",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "10d38b79cf12f27e28a00d6c71db44cd981ef0e2dcace55a046d29970295f521"
    },
    {
     "id": "P0625",
-    "label": "mujt"
+    "label": "mujt",
+    "sha256": "92ce78d0c1e9cc956b148e7a9f53381016fa0ca4a1f1c9c906d2358103146d3b"
    },
    {
     "id": "P1032",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "f230995cac412f37b11080b2fcbd0c32c2b3bffceddf5d3b56b53be5d7590ab8"
    },
    {
     "id": "P0371",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "a6b8a50268fc2e03ef2ec50731aff5a9f5138aaacd7e8df25a987186078bd2db"
    },
    {
     "id": "P2481",
-    "label": "mujt"
+    "label": "mujt",
+    "sha256": "cddae073af99036fc6d66fd8231244de8afbd24bb0bfb97f2283de3eda211fde"
    },
    {
     "id": "P1742",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "b54d5f04740335879c2da02d4a6734d125fc2768c26b2627915d0a3edf5fbb81"
    },
    {
     "id": "P0321",
-    "label": "mudari"
+    "label": "mudari",
+    "sha256": "17ba236835729739b5a74c3a29c369053536dce49b2b0df1f3404c0919a545a0"
    },
    {
     "id": "P1023",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "368ad656d340f985dedfdc6855229eae745bc694e8446a2394c02eb6162a342f"
    },
    {
     "id": "P0308",
-    "label": "rajaz"
+    "label": "rajaz",
+    "sha256": "a21567c62e67aa6975c5f0b6d2325f4d51c7532f7ee6b859a357706f582cfa45"
    },
    {
     "id": "P2398",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "9c5b9bba207d6d35223e96cf393a12d10efdfdcb597f3077bc91bc9eb42a2e52"
    },
    {
     "id": "P0663",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "3596506cf6cd2b7d76e62672f18823430b66947edf5c767112db82917300871e"
    },
    {
     "id": "P1304",
-    "label": "frei"
+    "label": "frei",
+    "sha256": "c40a8146fda362d5c01cee2bb73e04e9b2bba790ec8939f121e8c555c63ffbc9"
    },
    {
     "id": "P1834",
-    "label": "sari"
+    "label": "sari",
+    "sha256": "c1bd5abd81c25b509b3a5b9f408056c0f82d87b5b53334c2f6ed6b47c2699208"
    },
    {
     "id": "P0708",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "7e14c5fbba91c9dd387a759577e3ea281355b053948397519f6c20a226d4aa6e"
    },
    {
     "id": "P2332",
-    "label": "hazaj"
+    "label": "hazaj",
+    "sha256": "2b7da16ef93b9abe6646db0f0e34b2505933649a257bb0be91444827abb1a2c4"
    },
    {
     "id": "P0600",
-    "label": "?"
+    "label": "?",
+    "sha256": "e9c75c271854c5b393fa86ac516c12071f977307f1d90b224599073026430f60"
    },
    {
     "id": "P2456",
-    "label": "mujt"
+    "label": "mujt",
+    "sha256": "7d7324e25c17dd5539b4eaf9f05a7725a7039f5721e95c66b20366bd4c174e11"
    },
    {
     "id": "P1381",
-    "label": "ruba"
+    "label": "ruba",
+    "sha256": "b24eb21e9e0899ef049d23edec6e29f225e84b36ac9f96637326e9dee1f740ee"
    }
   ]
  }

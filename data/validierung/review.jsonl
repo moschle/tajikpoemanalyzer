@@ -1,236 +1,357 @@
-{"id": "P0135", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0136", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0146", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0182", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0232", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0284", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0285", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0295", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0301", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0309", "label": "hazaj", "unterform": "akhrab", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0312", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0323", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0332", "label": "ramal", "unterform": "musaddas_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0338", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0341", "label": "ramal", "unterform": "musaddas_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0352", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0377", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0384", "label": "sari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0400", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0415", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0416", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0425", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0429", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0435", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0444", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0446", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0466", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0473", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0475", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0487", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0499", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0504", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0508", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0557", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0559", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0565", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0572", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0578", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0590", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0607", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0610", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0619", "label": "rajaz", "unterform": "matwi", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0623", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0640", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0658", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0673", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0687", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0688", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0693", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0701", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0706", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0707", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0708", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0709", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0712", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0718", "label": "ramal", "unterform": "mashkul", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0733", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0736", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0738", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0805", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0816", "label": "ocr", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0831", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0832", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0833", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0845", "label": "rajaz", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0853", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0864", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0868", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0869", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0879", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0885", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0891", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0893", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0913", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0939", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0962", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0964", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0973", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0982", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0985", "label": "frei", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0987", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0994", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P0995", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1002", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1003", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1007", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1018", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1021", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1022", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1024", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1033", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1066", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1084", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1116", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1142", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1146", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1157", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1165", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1166", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1169", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1171", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1178", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1188", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1206", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1208", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1209", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1217", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1228", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1236", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1240", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1244", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1253", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1258", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1260", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1264", "label": "hazaj", "unterform": "akhrab", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1265", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1280", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1281", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1283", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1305", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1308", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1309", "label": "sari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1311", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1313", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1327", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1328", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1330", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1331", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1344", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1361", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1365", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1369", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1391", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1484", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1503", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1507", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1508", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1511", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1516", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1517", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1520", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1521", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1534", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1544", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1548", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1551", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1554", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1583", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1587", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1593", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1598", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1607", "label": "frei", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1609", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1616", "label": "munsarih", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1617", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1624", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1627", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1628", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1650", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1652", "label": "hazaj", "unterform": "akhrab", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1663", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1667", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1673", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1676", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1691", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1694", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1700", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1701", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1702", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1713", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1716", "label": "rajaz", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1719", "label": "munsarih", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1735", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1738", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1758", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1769", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1770", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1777", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1794", "label": "hazaj", "unterform": "akhrab", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1806", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1829", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1848", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1860", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1892", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1896", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1899", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1902", "label": "frei", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1904", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1906", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1916", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1935", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1944", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1966", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1974", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1982", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P1988", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2011", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2096", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2106", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2110", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2118", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2124", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2131", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2144", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2145", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2160", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2211", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2232", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2275", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2280", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2288", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2291", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2304", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2328", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2345", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2352", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2355", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2359", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2362", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2365", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2370", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2373", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2376", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2385", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2418", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2422", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2427", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2429", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2430", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2444", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2445", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2467", "label": "rajaz", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2479", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2484", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2485", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
-{"id": "P2491", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0135", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "dae00f5528166fabf5e67de945022d9da004afdce3c32d587895d22d4e267c85"}
+{"id": "P0136", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "25eb43492ed73f16bfe0f72f7bdf215b3b8b5a30a4513990d432c68305e59ad6"}
+{"id": "P0146", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ac7c7cb19bfd55d00f79b16c545f3b3229e64ae667bb58bed8b66cee86162b92"}
+{"id": "P0182", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "895dba353f0ffd1fecb95b311343682efb1773df5cd970cd01ebe6d28f62c861"}
+{"id": "P0232", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "841e43349c04244185ae3a1bdd68683c1ff2ef59e59d4a81aa4d80fd3785dab4"}
+{"id": "P0284", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b3053cdedc875711561d547f1700ff2a41f45d802bc0961221acb5ff86d442fa"}
+{"id": "P0285", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8828698d40e8be1f606b842a4fdaf8574746d8ebe905fc4a97adc8726b1897e8"}
+{"id": "P0295", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "fcbff294b164c2fcdd32915d56817181158ca31a11f41343330e7d6371d283a1"}
+{"id": "P0301", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a08edb987bfa01e37df74b255b0157f00b37fc0286d97b2d722e45ae3825b2ed"}
+{"id": "P0309", "label": "hazaj", "unterform": "akhrab", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "72940c0089d43fe9168e2422c6813db16a18f857594f29b5fe6d4a559d36259e"}
+{"id": "P0312", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "bc70d89c315a9ac55281dcbdef87e3c1a5b8b63fb4319df834c9d0c7b0c7da2d"}
+{"id": "P0323", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f3e3b82c1e1c3894319028aae3df649f1e09df57874429f159fdb94f11e9ab3b"}
+{"id": "P0332", "label": "ramal", "unterform": "musaddas_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b7217f7e0312fb20a307896e943709b96ac65f4dd666c4ba9d9ec4497ce9edce"}
+{"id": "P0338", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "195ae2db860c6d3e483d1c5edb84a4cd5a3f95ee2ae6c76ef979d8e55c63a3c1"}
+{"id": "P0341", "label": "ramal", "unterform": "musaddas_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "9c712e0f2512a1181ae8006706f30166a1d13637adeb412019b4d22e6285a087"}
+{"id": "P0352", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c8bc8ebb48ecffd3f3c467cbf047f5451d7fe1eb622e38494ba5d491bd1acfd3"}
+{"id": "P0377", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "97d6a213dcecec4fd3bfde4f35a95edeb8dbebe376cb9b1bba307d2e4a4c56a5"}
+{"id": "P0384", "label": "sari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d9d2e7725427e9610a3c2d9077788d6b0a9cde4dbd9f13770bc487132b8e71b5"}
+{"id": "P0400", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "bc2c7c00baeae51b0dc81ca1be0e07aafb75b78242dd19a24645732f76f2c6c8"}
+{"id": "P0415", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a68084648e0845959f00ab1c19befc0cc5e0af74d188c17f892e25cb792ca74d"}
+{"id": "P0416", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8e04a514c6c69d76a8fd26c3e138038100241d109741976635340afa3c1b030a"}
+{"id": "P0425", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d015f88def233b76c9fa88a5c36c7dbb034be2cd0780ccd8f71684c1dd4d6bbd"}
+{"id": "P0429", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "940c729ec29c5d9d60b45934c2ce75cdfff7ff1a9cd0cb50618094f9593522d7"}
+{"id": "P0435", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "98a6f29d6b272fd5dff33946cd1d5490dfd4e7c215b19a4b7ed9b90da5a5e5b1"}
+{"id": "P0444", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ddccecce67bf58c1a85a1ccf2b5f6b4cd9aa89d3fb40fcb08dce798babaf5f00"}
+{"id": "P0446", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "0c9c2e5ca677a74efb41fc22b8ce57c5d5f90b2dab8102200bb9f05c1c3c785b"}
+{"id": "P0466", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "07630dc1cde9e444d5cc65af8eecaed4b8716f770502d4fb75f413a196b7062c"}
+{"id": "P0473", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "92cc9a3917a53bc54011ec421d297ecadc6f31c6dcece5eba36846629e20325a"}
+{"id": "P0475", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "21e1d12ea008a2f29b3d9aabf1c64b6668c4d02e3c4020ee36bbbf0f43a1220d"}
+{"id": "P0487", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b8368b1aeebb2b0611c860e4376a99448ead1aa03b06c3b5fc222eb0158f4e47"}
+{"id": "P0499", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3cbae15d49e2e0d2edd62b97ed807e40dbd45f590a928dbc492a6af4ae407918"}
+{"id": "P0504", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "32536825a4702b6db2a90bf804d6ef366d102ac13c3b17076bfb77fd12c10b72"}
+{"id": "P0508", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "85ebb7ad3bdb226650da00bbc776d6843feee961f200bb9e31c9584198d7f815"}
+{"id": "P0557", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "79dd8525e4f600a7c7018da861a230955defacfbd1275e212250bb5e7bba1389"}
+{"id": "P0559", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "93d59c68999d23b03d895742a1a07d03a279c6707ee6e9977ffea214ad6e8676"}
+{"id": "P0565", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "1ede2adfe4388e5358e5e23f254e4b7a861c69ce4981e209317f70bf72e2f601"}
+{"id": "P0572", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b2ba1297224cb216aaee06a523c3f08210ab33e4ea186d0a2d34e778dbe570a6"}
+{"id": "P0578", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d86749cd03a68dc7297c117a4971d2e65a2dbc840730ca811c343f1e38633460"}
+{"id": "P0590", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "41129259f9b8ec28fde99871e674d31765230240bea7aa53b34726771119d613"}
+{"id": "P0607", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b1d30bd214f7f7d36531aee7f36390274b0a46de61b1c5f99ae1946c7ce81d6c"}
+{"id": "P0610", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c224ff91b3cf84f7f72d60e8a92af6e7ec527af6f41b22b2fc37b15c1301253e"}
+{"id": "P0619", "label": "rajaz", "unterform": "matwi", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "bebbd090e73ae97b90fe939964e4726cdfa45d509e6e344926bd690d3cfd27c5"}
+{"id": "P0623", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "67cd15b9c270f7617f026611b0143043cc2e2d72bbdfa0d95d7b477170791344"}
+{"id": "P0640", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "faf7ee97608cce365b4defa4a86a1b1d66493664a8ed90405b65162c5d27e84a"}
+{"id": "P0658", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "cfd085bfa2aa4902db723c0cd2acbdacf43de61c66f8fe81fa91f126dad5a0ad"}
+{"id": "P0673", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d85e762dcad62e62e1caeceb8695a49b331e0ae2d186c3cc338f952fda117597"}
+{"id": "P0687", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3e2e3169070b7c10cd0f43494d123aa26a2c5bd7e843c1e1f85bf37c5b3d53c0"}
+{"id": "P0688", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7cdc01a2cda13c624a63c07fde4220c555403808f88c8236fdc9867ccbc5b9cc"}
+{"id": "P0693", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a5fd4e26d9a8cd5dc5aa7b6b858d3c7e6c37f885084417c4b43e322ee236fc44"}
+{"id": "P0701", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "10fa8d1b8d57dc387b7b53d1a0f2181178f9c90b49b01d48fc60b15e17dd81f3"}
+{"id": "P0706", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "9f2805e14c3e04867e692a05a00aaab0ad80388c73444a726f54028bcee9aa7d"}
+{"id": "P0707", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "0ba593057ce73dac81a8cf534ab27ddcdc65d2cfa3a882b04249c203a15449ee"}
+{"id": "P0708", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7e14c5fbba91c9dd387a759577e3ea281355b053948397519f6c20a226d4aa6e"}
+{"id": "P0709", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "5de27bf17559ed37ebc85e9a90cd9be9a0e5126f50f1d4a612ee7ac896588687"}
+{"id": "P0712", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ff1dff2199f3328e6257bf1d13588f9aa51a76d7760da339a12b5bf32d46a21d"}
+{"id": "P0718", "label": "ramal", "unterform": "mashkul", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7e41737beeaf9134b293b88276f4008cf16c22d73302e5ad3a8e2f52d269f96b"}
+{"id": "P0733", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a594134490db2249da9e7f20ae09cfb5922921ce6d6fb063fa550b330ad894dd"}
+{"id": "P0736", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "2920f334cda173a4de0b6f492a6d9adcea280d2f6136b6e308ffd6394708c037"}
+{"id": "P0738", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "227f4227e8b65e617dec402dc05396a89bed375ed266a8bfa3bd9de462ab385a"}
+{"id": "P0805", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "462df376a3652ad3cc7ee01c87eb4b73cbd823cf2dda01f7583daa3df00e7a2a"}
+{"id": "P0816", "label": "ocr", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "93b761f70e4afb196945cc1c0242b49a806e540ad6befd69b1b67c83ef7884ba"}
+{"id": "P0831", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "34ce5193c6214aeb3315e90c61ad55f08fde747230f38b254632229bac3b73b0"}
+{"id": "P0832", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "fea9045a43a1d99ebe3383e915b58118c28a35203a89186248540bfe1ef035b9"}
+{"id": "P0833", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7adeaff7c01cee63ae313411362cf651576e2b7f042bb2cfbd20f37d3e685aa4"}
+{"id": "P0845", "label": "rajaz", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b2140837e71c70768ffeae9a4f7d91d7c654a394f2df0b45632cc3bc6be498a2"}
+{"id": "P0853", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8506ee842f9a4732839f508d83ddd71cfdf5b6b1b0e9e7efc7386f0ed3463088"}
+{"id": "P0864", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "9e0008d44f7cb0225d32e42a0e8570b50cbaf7e3bb3844207aea4a5c33a422bb"}
+{"id": "P0868", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "924c666870714fad01507a730877335d6366eda97d4c9b43af9832c72882491d"}
+{"id": "P0869", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "be7bea362e9cf62e6b7433f7c0c48127a6a80a2350a30c7cd59dbf674525494a"}
+{"id": "P0879", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "750eb986c24ac0ce62a87fcd8e33b70f3810d0291139927add564076bd15af06"}
+{"id": "P0885", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "58ea8631a581f3075652c8ced96a181ace5478a6c31700158756f5315e3e4ebd"}
+{"id": "P0891", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f32f46c6ec4ce627198a3e40472ed714c95012217ab0e100792f1743778be57c"}
+{"id": "P0893", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ce6a68ea41b7bda5f264b5f1185e0d6dfece1c775159bc4cada2eb6708d8e1e7"}
+{"id": "P0913", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3fbae76268af46c28231732d74bd1f1b7713a3c6e1e175c2ba5b8fdd9586453b"}
+{"id": "P0939", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "31aa422ed65ff815e978512a71969e103d7c2b50cbe453598e833363e19df857"}
+{"id": "P0962", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "97a9a5cd1c2fcbd8cee9ffb154c7cc77cf9a6a8ddb80873449c4db2f74c78adc"}
+{"id": "P0964", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a32fc47543952bef64370ee9b5f230e0255b4b516d943ba09a6ddae9df10173b"}
+{"id": "P0973", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "4ecbc3419090aa2326743c017e6dff4c431b4ba688037f7f2473ab4334cb9a9b"}
+{"id": "P0982", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b1273c0fa911c45edd3f3b07d60a0c9a6aac87919534b40276e5967d1b85ac13"}
+{"id": "P0985", "label": "frei", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "5084065a3a42e285840c7b17d96538faaa3a8625a67c812446f023325dda7b61"}
+{"id": "P0987", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "82aa993764826fef9e6e67954a511177f4ccf9e6fd9ebdb33b7a17150b9c656c"}
+{"id": "P0994", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "e142f86664dde966bf60aabbd03c6fc8abbbbdff0a89588497140437d4bf00d5"}
+{"id": "P0995", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "4eadbd26af1e8b926df7180950ae268c4acc08de4d62960da60d8ad1e91c0591"}
+{"id": "P1002", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "093e4851228a615d10d205bec88675a810125fae3cc2e27974af0c666f2b7744"}
+{"id": "P1003", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "0d698966dcf141b352164d51f2c0a707c345ebcd687ef863340d782f7c0d8b6c"}
+{"id": "P1007", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "583b8927e68e0208a88cc0c848754adb2ba487552141010a31ca78eb403d8cdc"}
+{"id": "P1018", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "dd832dd2319a1b7c611684b66e28754ea4c20daa6642d0cf78427172b6bd7553"}
+{"id": "P1021", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "110910aec134b5a7d5aed98418cdda573a239e51fc5f62a17c1f2f358852c941"}
+{"id": "P1022", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c9387cebd0f37882e8fb5bd254ec277b33d809d9fde957120f17c00c8b93eda7"}
+{"id": "P1024", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "79c3d4d95e0f13a5b2cc5f130058836e46b510ae8939f9d84f737fe04313017c"}
+{"id": "P1033", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "e759ce722296561b05ab42fa548a4c8b77e52ea9144ec727e24fc3d7953ca0f9"}
+{"id": "P1066", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "57eb0f0d619d743ba2133993285433943cd9d661ff4622140f424a4629e1cfbb"}
+{"id": "P1084", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7d10255d5fca8cb79f7d9670ae69fca966e4836883340d6a8caea0cdcb1ada36"}
+{"id": "P1116", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "2e88e7a53ef7f1fc34c797178e40c9f86b4b543fc975ab3c08cf19f35be162b8"}
+{"id": "P1142", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7414c1f22b1479cd300fb99a263b9d1f71a58aa95cba99b87471312f1a9dd87f"}
+{"id": "P1146", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "5f096eff4aed6d7061a4f52bd776d0e30afcd203105452105b844c85dd9d87c1"}
+{"id": "P1157", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "39a38c617c27d4b9f8fa67c2ad14d50c122d4de4a2761fe038d70eaed3567e4c"}
+{"id": "P1165", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "9361c01cf177f54aa5767fbc61912401ea26030c62b97bad387d9455565b10ce"}
+{"id": "P1166", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f98d7255bb358d79b51cc028306b25314f15911eb34a6c4b422aff446dc46298"}
+{"id": "P1169", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "2bc1819c1432509a4d69dc5ab72c65598152b99fb5e780f62515f3af7a109b2f"}
+{"id": "P1171", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "388cc1b6fef1d28e8a5affef93243385d4becff89a2cbcb956a0b899ba181db2"}
+{"id": "P1178", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "88445664d4ae87633b51588d93ddb85fd5a6328717c4efcb8b9dd95b7ba55803"}
+{"id": "P1188", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ab5f9c31cb7855697b7a3f10270b9f73685f8e4f873979cc4e4887840d71bb2b"}
+{"id": "P1206", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8736b7ef32134ef420f6df231ce790efd1547c799a6e8e8b3076e1b3bb98ccc8"}
+{"id": "P1208", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d08f93bade99fbc5c41cff15915c0f6e906d0028275937cd00b1fc7bf4998375"}
+{"id": "P1209", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "22225692f90bc93dd866647c6029486c322c4fc6f9fedaa4e64ece2e0c9036f1"}
+{"id": "P1217", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "240271bf23f2b27e356ad242135e7aaabd62ac9ef3074efe5070e6fc1b13d567"}
+{"id": "P1228", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a2d1574864ee00c54e5f0f28e56f7259ee95dda3021e0b326df9e6fe399ddd21"}
+{"id": "P1236", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c31c02720f1a5b8841e59571cd13d03ffeb8249054652c5fbb7aefaf91c7f7cc"}
+{"id": "P1240", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "71f49c9327f88c3ddd40ed36d7dd34d8dfb1c568d9c2b5d5fff4bcdb26a3e915"}
+{"id": "P1244", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "186559917b9071063e8f56f9411c0ce002f43f242d537e3f60447cfd0726ed17"}
+{"id": "P1253", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c40739c41d142d798afad64f17217ce3e65cc0c45e0056de36243d6d8f6afa5f"}
+{"id": "P1258", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "544d4b4506d0c9b68c22b2f85ccfd7f1a6c57709940ac9bbfaac20df0427b18f"}
+{"id": "P1260", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "357fa44bd7c01aef0c517f1ddd9bb481e9f928cedfee9a7369eed29e636775a4"}
+{"id": "P1264", "label": "hazaj", "unterform": "akhrab", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "e70aa968bb31b179004cc6f68e6921b9df551848e22244d99d5c8bc225ab6c12"}
+{"id": "P1265", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "982f123d2749fd87bd2af29a168fa3ef3c99e93d999832dc0c33a567a90b4df4"}
+{"id": "P1280", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "943fd63515c7702a162a0c63fd4a0b2c94df9cebe131e49c3fd7ee6c337981cd"}
+{"id": "P1281", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "172e6772b7829dbd121c6d071457df4f36ddf862e7a1de0c3b7b93149a8c7eb7"}
+{"id": "P1283", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "6211251addef972471fa1560df43c41d7638623037a7e5a1591b2927f5ff53fb"}
+{"id": "P1305", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b23aa32863aad63c8deda20d9ced0e4791f76ab1a1cbc3ba1cc93f5ac6c00f8f"}
+{"id": "P1308", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "bfbc82a248a3a4d6a9b66633884175df4cc91a85d346b98eaeefa5e73a4b3a17"}
+{"id": "P1309", "label": "sari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "307bc8b85a484bdd726e1402b99d0b00c06aa3851371726ef69777cd32cb7b52"}
+{"id": "P1311", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c8bb1b33d90ccce740dd0ce254506486858edf1895b4643fbd439b4ba3379810"}
+{"id": "P1313", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "187dbc9452144045e3538f3f2949a9dce47a52dd1eb043f62fcadd463b280cc1"}
+{"id": "P1327", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "291dc4a696570fe89253acda61188a1ea3f83b064378756f2cbc8da63b133ee1"}
+{"id": "P1328", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3feea2230a1bb12cdb7ccee44fee61f6968dfa3482d87a0edf80230997782509"}
+{"id": "P1330", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "16b8701f0a51393b73190950318136af8781f5e7e3ee5f612d02d1192bcf4eab"}
+{"id": "P1331", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c91a7be9c934ee52b8eba510b6a659e8afe9916704697a7788ff7c57ca36b1f6"}
+{"id": "P1344", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "1280b69261cc4ed5c029163e63bfe8dc3ce7154b33cb9ac56f8d5bc2ffa956cb"}
+{"id": "P1361", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "94bcc8ce6995a50e36845adb2580b6435e9f4555a092d74b29047090559c8c06"}
+{"id": "P1365", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "dd774aea0d9ba3cdb1421e4d66d3603181726a65955bb3242a89d2953518432d"}
+{"id": "P1369", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7b6e9cb3e4e3feebeec367e5d1cdc57f9c2470806fb2aa3f54f037e157c02995"}
+{"id": "P1391", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c3edde29cf849aac8b83242a5fd35c3145804585e6ba326d85f8b52d39dc68ca"}
+{"id": "P1484", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "07b57476782234f1428ba30cdaea6b0e330d8c9123badc9b41365e18b3d09136"}
+{"id": "P1503", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d29e89564429c50101ed0b42cbeb4a85916442cf0b34fcfa16e900c9c0eae238"}
+{"id": "P1507", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c5e723c25f674f39733693178ffcfffdf6ab3923b9cd05c0e55a5b1058957ee3"}
+{"id": "P1508", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "eebccabdcf723fda6ddd26063f82ee19e9a0016e41d449a3ac1fd6ac4883e182"}
+{"id": "P1511", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c738802c2ec57a3789f93ea4cc6430ff1ff34e9c402711c6f3aa9bb6e86bd822"}
+{"id": "P1516", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "42cb3e20a1279bc341f1356733e799647695f49a7bd12f5e6afc92740962a8ab"}
+{"id": "P1517", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8b9d86368ad01e56b49072bc19c5547aa7518403431e88f12103b5f5c9034f8c"}
+{"id": "P1520", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "5a90dff509e8ff54f29329ad7708975673f607948f6e664aac2dfcfb2904390d"}
+{"id": "P1521", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "00c251ab025bdef8cdbeaaa9a4170f4e347d9fc5cf262e9615dbb8468870a1d7"}
+{"id": "P1534", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "37da3f113ceab146ad798e60d3c70bd4d75f2dc980c7e6c9963695dcd4ff3426"}
+{"id": "P1544", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "750b399ee7834a2cebcf57b7d60c434409156a1fcc3f99859b20e910207905f3"}
+{"id": "P1548", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "892c01d7c22e6309ac5967fc4ea0530ee4182f443d424b61cf4b1158e8805b57"}
+{"id": "P1551", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "9ca910ea6cccfd8f7fff1062e30cecc95f0e030bc44cbaccb8bdb25239cd4f21"}
+{"id": "P1554", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ea640f363dd92ad6274f3d69b96cf76b165a3723ead587a111b18997d4cfb8c8"}
+{"id": "P1583", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a8bd1f18e785b9087f33f843ba9945d247fd880fd894372872213d6dd2d37b12"}
+{"id": "P1587", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "db7804807a533730e78e9b191fb19ad1bb7e49d452b2a097502651f427c3325d"}
+{"id": "P1593", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b55807d751585fbaa2a8e4c55c985eb41f925d3f71fe1ae590b0db2b7bb47552"}
+{"id": "P1598", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "710249f15fbac3ee2468946579e366bc707d5d1cdf532e1a1adb552ad7b87b32"}
+{"id": "P1607", "label": "frei", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "e9cfb6b66345e1e3e96ce1ac556f6e9c109a280ec626247bf14e6a9981af0d34"}
+{"id": "P1609", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "5f43e6d1b128c02dc2f019223649ac819433389bf089229184d531c77fc09c75"}
+{"id": "P1616", "label": "munsarih", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "25e7022426adde8979d9211c18e5589f1067f4027de57006a4c77ee0f5f74211"}
+{"id": "P1617", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "003b12c8be6275ea74addb1bbedb7265edfacfd0486320b28c3181870011e4c4"}
+{"id": "P1624", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8fe5e318e08292d078d563324f3225527fcf5e26dcb3a0d0e5540edb650e0e29"}
+{"id": "P1627", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "2deb14752fbf21745487660c50407874f282e7895178b50c97d1d4770ed16ac5"}
+{"id": "P1628", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "58c4d594e905d47b59b4dacd653239386547392d8af4c4d81eb44614e757173d"}
+{"id": "P1650", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d7c1a5dacdad87e4054b84d80e0df8a23c0b2611dff165c1f6f071b3d5e03c75"}
+{"id": "P1652", "label": "hazaj", "unterform": "akhrab", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f09f013347e006ef9dc91777b37f5b51cd39ed50724a2c34d61f2bb76bb7fc52"}
+{"id": "P1663", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "abc40963607561ba507f0dca4074c526f4e9fe444fd5e0a33c2bec42d874291b"}
+{"id": "P1667", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "669e16e0d80c1997bb26943feeb78f48acddd9e8546b9c587f2c5b8e057f5c68"}
+{"id": "P1673", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3d657c62bcd6dca47ebff34951b2405274ae7d44214a401bf911a20650762e5a"}
+{"id": "P1676", "label": "mujt", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "772a5a40a1130f4d7387603b15b798a638adb2d4b63ae242ea09ef3120b08ed9"}
+{"id": "P1691", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "57dcbef675300e27e3725c91e0b31a742bc0857114c658da4b3ccdcf8fa538bd"}
+{"id": "P1694", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c673fc738a925a3cefdc45ac66c284bb78dd7a5b0f5291f06c88280af07ffde6"}
+{"id": "P1700", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "9620925da5f55115548ac2021903b2c9acf74fc892045fafac6fc1d861882c01"}
+{"id": "P1701", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "babc7a5ad0143dc5fd73dec35b4c6570d5b851b293ec86bde1e3f4234a29b1f2"}
+{"id": "P1702", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ab228e601db086cae06f37549aef6028d6b8602861416f4c3f837263f75ab463"}
+{"id": "P1713", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "4688e38c8d26afbfb0ba804afa46717aace13a6980c3e97f3c19c8b36268c692"}
+{"id": "P1716", "label": "rajaz", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7989ba811a3bc121fd6c0f3a0b7e5a120c3d2d11d0f05bb45cfe5f566e1c22a9"}
+{"id": "P1719", "label": "munsarih", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "abc904090194ef23d71286f66e18a1760d9f970a7e1dd4fcffe238771189caea"}
+{"id": "P1735", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3506f29440e53a962983aec1f1992c5b723fbdfd6114dd9cf5be9cd5b3a9b772"}
+{"id": "P1738", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "0c67e2b70f464cdb4b7ecd1491dff1087e6b82b3bb67836a1c5cf0df03affe70"}
+{"id": "P1758", "label": "ramal", "unterform": "musamman_salim", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f99ee183964bbda474f41a62cdfb995f90ed7f59c088057114310c68085fa855"}
+{"id": "P1769", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c8aaa1dab9ccf98f630049fd1e314e9ffcc552194a5298f24687bffe386fa0ed"}
+{"id": "P1770", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3c5cd4427da42737ef96c015e5b2e4f6b46d675847b75915905f61e5ca5a7362"}
+{"id": "P1777", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b6dcdb784c7cd7bdfa2f9aecc5b1350fce0c70d95b3c63f153ab461f206b283a"}
+{"id": "P1794", "label": "hazaj", "unterform": "akhrab", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "588393ea7db8015900b37ef7a8b8102165359ac54828762a44f4576b6268ab19"}
+{"id": "P1806", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f33f736b9d2f2c9f080121d1379746274020069646ac640dc72902ecdfedcc43"}
+{"id": "P1829", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ec70ca3be80144d84950fb7a66832f7818f0cb3df38deb6cc646b02a0f26a461"}
+{"id": "P1848", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "4e2e2d6cdd364d7b1bbb29fa366034176b73f98049633963ffd12066570107f2"}
+{"id": "P1860", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "bb7f3c53ff607692ef4f1ce49685c0f2c3bbf99c31907cbf336b4527a0e2f1ff"}
+{"id": "P1892", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ace7f4888ef7386f1ee1d1297ea7b079b2fa55818b4e7b3b41fef2c658c9feff"}
+{"id": "P1896", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "5c55c1f35e04e993771ec18e91e7ec2b0014544e8d2b8d9c9d42ecbca07a5bfc"}
+{"id": "P1899", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ec83021015a09bf0bc261ba2e94c14671d4b5c33470c70aaf6a4e5cdbc4d57cb"}
+{"id": "P1902", "label": "frei", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8689af1af3565b62bf0e63a9e5cedf216093e63f034c780bd5e986f33b5887b6"}
+{"id": "P1904", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "6cc0360aad99601935de1c9a11046daa373184e3850946b17e4e228474686584"}
+{"id": "P1906", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "23ec8733451ed023835eff84cb075c8c76358dd0817ed1d7a49aa500347b6428"}
+{"id": "P1916", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "23fdf5e173d7d80aac63a4eb5157a49e0986e00ee62783791ab83013de665145"}
+{"id": "P1935", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f528d354a2f9c3351b99a187d28ae00783c7958edda04a04935158c3e69b550e"}
+{"id": "P1944", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "73129e25939f41d63f841d41339843e2cfe8f5fa014601583becbef37d4fa174"}
+{"id": "P1966", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "244a9ad65015395fac88e2aa23e73c94b5e59476130c55a8a0b4ddb4b1344e3c"}
+{"id": "P1974", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "16fdeb47162b3be1a59d35bd76e0124675a502ad27b36dca3e5c579f82069cee"}
+{"id": "P1982", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "6aedd93c343d59aa13c0373bd2835c6850a0cb2fb591c31507b1d9181bd7d9d4"}
+{"id": "P1988", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "920ef5735fc5a5de93ea6395abc4f60105f1132e662f7dbe23a2529ca88ac3f2"}
+{"id": "P2011", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "11e677190ffe414354c9a133fb42a9c5b4a57a66e3533ee4d17df93e3b3933f9"}
+{"id": "P2096", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "de8eb99201224066d659a11066e1866ac1c002362cb261b538181bc87885e0f6"}
+{"id": "P2106", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "649cebc948625194e38c5be35416cf8c0de198b014ee912c5b3bd2e8848984bc"}
+{"id": "P2110", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8954fb0801c163172e114209c85db0e22a3eda760af975ed16d3428ef25b2b4f"}
+{"id": "P2118", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3507fdc21653b26e510363bad47aeb87d60227b63b314db9c1a122c71c22b628"}
+{"id": "P2124", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "8029086c03d4bcf1ef5013c2d2c837b4d3324dd686c8bb7e54772adfb61f99db"}
+{"id": "P2131", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "b6fff1f6ad63be53a3728f75bac5fa8c8bc5fbcf76a792eb14921b5889cada01"}
+{"id": "P2144", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "fd2a48405d133c06fd785aff61baec70c7542c2dc5193142672b25387136ebc6"}
+{"id": "P2145", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "56320baae584a0dc6d5c00c77f37c35b23a3f5e5d9ef4fd60bc4befd8aaa510f"}
+{"id": "P2160", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "42da59925d96fd32229b231e0454d6a2c4f0dbad62a86756e55a3a225e71ee25"}
+{"id": "P2211", "label": "ruba", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "859b82620c7e31b2dc302e25175093041d56879895d302e5e0ea925388dcafe5"}
+{"id": "P2232", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "67ed063b0844e907fe4e2ddcb36dcd31d63d6821e8361523f0ea2b773d6ac990"}
+{"id": "P2275", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d360f0bf7a021ec6300209e3912c69989c3c86cb793275886a487a06137c4444"}
+{"id": "P2280", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c6171e087902b56a16327d86d94c2c07a54d8294f886d9cfbdd269f1ea2ef4fe"}
+{"id": "P2288", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "7c47d733664e7e8cafa094dca7777636782ccbe44a2553e0e1841e06047d7d99"}
+{"id": "P2291", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "314fff813df8621b6d424b2677358b9ed9355efa2f92e7dd456ffb7ae1b28729"}
+{"id": "P2304", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "195be21c839610e97f654d9b84eaf8407acff11d0d5363c8688fc0341f3307fd"}
+{"id": "P2328", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "380f9de1bcb12281d5eaf23a54d685099e69fd1054438084649ad7d3bd527a87"}
+{"id": "P2345", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a826d68d34e6649282174649a566a118e9c6cf5eb16f9a2ccccd6480cadb014e"}
+{"id": "P2352", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "dc7f24a1f4f64871271a67268b2bf2463f97e080d0d85a522c8a7ce3c51600fc"}
+{"id": "P2355", "label": "hazaj", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "160c38d21bc092fd18b300f3fee5098e74c209480d0861991fa922d427a9f956"}
+{"id": "P2359", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "c848f0be815371db164916815c222544395b8bd05168211efa6e6843b7936721"}
+{"id": "P2362", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ad14bd26e1747d5277b3e5460d1bf6060d8f393463f53e3064b6e4a2837fcf25"}
+{"id": "P2365", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "3939cf1ede35206dcb6449fd61fba106230efe40f8616c9a77fbd7e2d735b1d0"}
+{"id": "P2370", "label": "ramal", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "d29eadc8521b0cab6511596e0cb84ca2bd5bfeeb0917bb48904a8e59d8464672"}
+{"id": "P2373", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "e3e569fcd89ea4266b06ae3db9919b43e9a6f718da7c6753be237550660e35b9"}
+{"id": "P2376", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f5b7324e8f82b8dbb9ce49335387072c15dbcb2b2291104d66aa9b8a4c1a16c0"}
+{"id": "P2385", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "529c9db87e7a5d9927b9d5a9ae0b76d489eba9ce4b7f07f1e0bf07abfdc4f84d"}
+{"id": "P2418", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "30fb80adcea0c780190405b0ca959235bed1fb63d3b88a1ac2d8b26ba3266179"}
+{"id": "P2422", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a30db464938a7e01aab59cb5484dc37a71d7dc607d6ca1c11f8227ee3761111c"}
+{"id": "P2427", "label": "rajaz", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "be8bf1c6956ddf2585f2750c3dbe359295d17b63cd5bebd17efa9e4fe2e6d674"}
+{"id": "P2429", "label": "hazaj", "unterform": "ashtar", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "def16bfc7541c3bf6d6cf154df02d5bec52f1f9d48736a9ee8e96f6cc4a80598"}
+{"id": "P2430", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "dbf059444d5474e1b5cf60a92eb051828abf27fecf2c13bf32b76a8525e2599c"}
+{"id": "P2444", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "a545eb28c187ac5449eba29f6c08562e61d40225c3f668f30f2d9c407781b7d9"}
+{"id": "P2445", "label": "?", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "f7d2482892afd92a336f8e82c84aacee6d14cb5b785be445355eb05a38357c9d"}
+{"id": "P2467", "label": "rajaz", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "35c5c93994bef79eeba6c065fb3dda63a9a74d3f8ea73d226834fa1cd164eac0"}
+{"id": "P2479", "label": "hazaj", "unterform": "akhrab_maqbud", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "ccc23d5602086fc864ca08d1a6999bb0c4da8e04efaec0748ec59893139d203d"}
+{"id": "P2484", "label": "ramal", "unterform": "makhbun", "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "58631bec96c2793327a11318100f793c27ed04945c4045f3128905179562fad6"}
+{"id": "P2485", "label": "khafif", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "41cb12123e318c4d872ba90c7e0d05ee869e0e5134a4e8fccb3d396fe874017c"}
+{"id": "P2491", "label": "mudari", "unterform": null, "runde": 0, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28", "sha256": "5cf6231781f9309921abb179161753a279582efe406816446ec0f1d989e2566d"}
+{"id": "P2430", "sha256": "23acc41384e2228c2fbf82320e615f1d2044ee8fcfb9fb423eed9fd821a55fa3", "label": "mudari", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0301", "sha256": "bbf121da93503025ae81f84f8802a65d62303a2ea27bcc41b37b559711c6d32f", "label": "hazaj", "unterform": "akhrab", "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2317", "sha256": "96013efc3b05a592976331cba61862d27f775c998b7ffe5a847cb0a4544ca4f2", "label": "hazaj", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2316", "sha256": "502492799e7ca177702918572bd43dc3e66a72e3823bbecf1c82d166bf38ef92", "label": "hazaj", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0805", "sha256": "5b1434cab8cacab9f9cc3f99636fc8452133e7a0c75565d327400d191f7c1961", "label": "ramal", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0428", "sha256": "6e544cdc6913a9f0d7bae41a9515acf3952e769de826bce04a60fdff7c87817f", "label": "mujt", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1789", "sha256": "61d666e84063cca54deaedcc76798f64acd603113c457eb2e1458daa2630bcbf", "label": "khafif", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1352", "sha256": "0fb46a2f0906582b2dd4b90b367184ea4802adca17004f36fae496cb590e64d8", "label": "mudari", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2397", "sha256": "d4a9080cbff387976e4d160afc5ad900586457bac4f8d6886f97a872a4670020", "label": "khafif", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0673", "sha256": "2dfa73b0e67f3ef2a7c7a6f390410d7ddc2f9ee1f61d46ccf35f5f4b5e58aa7d", "label": "ramal", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1421", "sha256": "e6215afdfbd56d7d393aa7d0767bffd5f51a29e071922f3fcf2ba68e152e471b", "label": "ruba", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2231", "sha256": "2f651e01327d54defd7cebf2bf0335561e3f40b3f3c61232f1838f788df6f9a6", "label": "hazaj", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1345", "sha256": "63d0516179d1f854ab334917d391debb6d1c993f64701495fcaff339aab4a589", "label": "mudari", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1809", "sha256": "b6ca21ce43b4e26e047c3a979284d062756dfb7f127caefd99237ebc26d7589e", "label": "mujt", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2065", "sha256": "fdd81898f094333cdb682c1ed24dedc37d0fa492f3c9aafbc43685be75b98888", "label": "hazaj", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2359", "sha256": "524be7c8f9a071e297d1674aa4f113f7ea84237277988b1c98e0f570108a8f2d", "label": "mudari", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1409", "sha256": "71751e569197e075eba07c1d78cb82cca95e7de6635e7559f082046ca356661b", "label": "ruba", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2384", "sha256": "322b6933e54b237fbfcd1f8e9aaeb51408292272f8a3ed1cc2ea1def2cc1ef80", "label": "khafif", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1842", "sha256": "c5fb9f438910949d24ef0fe431dc7503ae6adacd1469da96bdf4f39df6280100", "label": "hazaj", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0815", "sha256": "d4eac41e44b5815e415f5b2a372f324e4f2da64e9314e2f9ed0eb36b35cf1360", "label": "hazaj", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1977", "sha256": "e3d4c6a9a87f3185031642b80a710c8c90c94e745d76b683f127a86d529bfc97", "label": "ruba", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0280", "sha256": "476f5bbaa263a33fcf81ee07a86e872887b21222b7eac708efc5f73b11e122a1", "label": "hazaj", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0212", "sha256": "f854019d4020cfeda35497011fa6ff9612b5d8a90e9fa3e37d8013552848f02b", "label": "ramal", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2262", "sha256": "f1fe40622fc4c7a4afc471588e5cb50f20d535581aa1ce9b5ecd0f22775d532c", "label": "hazaj", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2199", "sha256": "c25c53d97576b06ce9edfcf452177bc0ee29da5649fed70d5fe663ee4b973766", "label": "ruba", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2370", "sha256": "0a01dc9e4a48f88f5cc4f593f412eed130ddb20c89dae9b5a942de4973d3b2cb", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0950", "sha256": "1b0f23262a6fc938f66e3b3d38dd4d5c7747f99158c8221e9eaabc2106d0407c", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1929", "sha256": "b98a61fa968035497c2f589314a6057f487a42407bc537e4f59de28e0a469dc5", "label": "mudari", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1918", "sha256": "5d8dd244ac14884c55a09c1b6a5c1e634e342df26b52b450db86de3bf67565f0", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1853", "sha256": "aa2ac0be4635aec2625cc1c1d208dfd33356aa63d95f8d6145e25d3cfb7090ce", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1773", "sha256": "b1eb40c90abab06938122af2b644a072874fa28a5d8cf0028ad4ca5a0e42d44e", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2348", "sha256": "bf3c9e5aa9964e8d894c75661d57dd538b1575b2fe6b53c2ae90311e6e61df5f", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0426", "sha256": "3964a825f3e1a890b78b865cd894c47101900ca2ba84e61f7660e4af5065cbe3", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0991", "sha256": "075493ac56b42b601e0826f0694c670a6e93eee7d6b1aa5a85f0769d973b246a", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2346", "sha256": "03cb2b5478d29779c23d7c623afee4a7fe6d00960c8a87bb34d94ea2419af994", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0383", "sha256": "f6c1bca0acc25ed2d097aefc99aa9268c2cb24389ea94d2268edc05f70ea36f1", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0129", "sha256": "e51fabde7add07de781add25ef3596edfd7416f29badac7332b1a0a8d53ef511", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1279", "sha256": "e3150048a4dd7f2ac7e04ec153c24b26683c4a06843a8bb8176ae38b417387d1", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0255", "sha256": "0cd51435c534a2dc90917618ead7a064d5fd113c345f37124875f71fc3451a5a", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1837", "sha256": "2f5930a17ade4363f1350e79aa79028850ecd4fb7d2cb9a8489377090641ebe1", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2416", "sha256": "266926df3b8b6eb551285d78dc0ba727be4a6056dd639cc21c6312a380e890b9", "label": "frei", "unterform": null, "runde": 1, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1713", "sha256": "d661dd3d87f4a0fac35c71a2b8784c739a6c5ec8c10003beb7780659e6c58b5b", "label": "mudari", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1965", "sha256": "15161a83e364470422bd97d03397a3d8fd7087df1907f18ffc21df5264d0ed34", "label": "ruba", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1463", "sha256": "86860c30c11834cdf5e6d6c528140d8ad5480a19e9580e12a5d81917bd3e3d59", "label": "ruba", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0910", "sha256": "06a7f8d74321d44fd94dce16575b2bade76aeba422a63de5f2f8fe5a1d9a9b53", "label": "mujt", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0619", "sha256": "e7a4ecbc660e5a6e4dc9d72cd71d829d5912b9e68bf744f34fbab442a07cfb41", "label": "mutaqarib", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0570", "sha256": "e6c4e6510c72730a63b1298089d18f941d9e9eacd3eb6b8a82ee8493ff80194b", "label": "rajaz", "unterform": "matwi_makhbun", "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1067", "sha256": "f40cea48f3bf6eaf875f39a0e2eaf9660c126dc00795e8032a7d039354d63308", "label": "ruba", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1622", "sha256": "6c15f1e23aaa23c05fbb45436366460023f176ea931e763771edeb970c51876e", "label": "mujt", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0560", "sha256": "d209584aca697e229b6a93d91f8074df524af1036fb4ad5f181156ff805dc083", "label": "ramal", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2033", "sha256": "8d5626df19002165b4f95d0fb363f6ae06900b29e94e224db08e0b7c7a191317", "label": "ruba", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1928", "sha256": "f0ab4a2e638833894dadc7f53c9d18d4190f9f25b79c4e12a3fdbd88b3ef74a7", "label": "mujt", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2023", "sha256": "c7d6a316e2815a18a85bbcc0b50fffc67e7546041a3f58412fa12d134ab8dfde", "label": "ruba", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0447", "sha256": "ef748d22233affb8cab5065fe1d5c0dac53a4c4429abcb22a73289c8e38f7407", "label": "ramal", "unterform": "mashkul", "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2217", "sha256": "63fc3b6cd5a27b0a2da3fbd48c8454a75339a5393dfd881879561a04463aa1e0", "label": "ruba", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1494", "sha256": "aee3ef5c3ac763227041f984b7b7d867a3d787a4c511e071d6d0abc70855e229", "label": "hazaj", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1683", "sha256": "8805de1b27fffd335466f81a26d086882b5fc91ae2352643b1882b0b3cc533b0", "label": "ramal", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0276", "sha256": "9ff4ebf81628b73a5511a90db040721743678d4c69ac9cc494d7e2e98a0a81c4", "label": "ramal", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0971", "sha256": "e206ed63dd92a379df531ce90c5b470456924c70754cc7700ad95c2588e2ff99", "label": "ramal", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0922", "sha256": "29de4beb7d1311ed664fc5e594081e623684c3d4702e393f48cee541d9fa2de1", "label": "hazaj", "unterform": "ashtar", "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2443", "sha256": "129249d5c741f0b0bbe172466e90ca9fa941db19a4b17b233335ac4f48d7dec9", "label": "mudari", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0244", "sha256": "a01bb899d263b2158d01411dbde906260ae1d86e260c6dc4086df094d76e8be9", "label": "mudari", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0206", "sha256": "64b877d37e38299b981d53ed6c189e604e0b7e04703d401e6df2feac13aa062f", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1836", "sha256": "5ec3a3185506bd4592100a841de42f866d818a3fef33b2acc312df6a64a8185b", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1805", "sha256": "3fc2dffe03bad3acdf43249db60f45f8c3bdef37e3d23f18ec910babb7994a88", "label": "ramal", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2147", "sha256": "0f88fd79e25dc8ae933904fd5624e3c0d09afab3d7eb56cd34af5a33c2377a2f", "label": "ruba", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0368", "sha256": "8a59cbff2e048aff42271c2ec56062d056ef162ec92f53e55b437542e6876d12", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1357", "sha256": "5fd8b176452134052721955ea5d033b4d41e4b5da0b32285cfd956e2c9af5a3e", "label": "mujt", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0407", "sha256": "8466975597b7e9e5abbcdbf9db6d3046b9c5118e24879a78e4a124b59a181984", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0667", "sha256": "78665af6b7f9a90616c0d00d749eb314724812f5e16a730dd9f31a5b097efb07", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0902", "sha256": "6bae25200e2f57f1461d5717772222a51b91d52d005adb6398d77dcb8181d87d", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2497", "sha256": "79f65a5f55b7e042b8eec1117dd6007fbbb67d01f0837a182a02e80b3a6e2f73", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1888", "sha256": "d1b83390f6f01ba7ad0af535dab979b0de29616fa2426afc038a272559ebfbcb", "label": "ramal", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1885", "sha256": "fea9f6b7377c9d5325ff3905dc03c6cb473c6cb55077a8e30b4a5296d4fc30ac", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0627", "sha256": "7d3550d0ce727ecd8460863f3d670d7645344646cb0ca31290a94e2e02bf6f0d", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0234", "sha256": "2efd36eafdd5f900dc887e3d73cb77789f6ba063d07081d4d4c139d8d31a9ff3", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1231", "sha256": "2eddbd557d3c6bc823c9a709e6ec67a5208bbdb7cd50930659e0af5ae4e4497e", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1340", "sha256": "520c9a7d2728124331aa4c14b89ff0d0a47a144fc1b1056394da04470ac49b7a", "label": "geb", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1891", "sha256": "c59ee74938829343cda0b34b2d0a2ee405d93d6b67b53d6651dc2fe701a62d7d", "label": "geb", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1926", "sha256": "f0df413541c57b37eb08f9c18e80941d2a7171c0cb4a016759cd020c4c280c7c", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0850", "sha256": "074458263f5291bf0e05f4f82b8173a5935d5decc72212cf9b5b8586e4d491c3", "label": "frei", "unterform": null, "runde": 2, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1670", "sha256": "ece2ebe9dafe2db2800d5c2476f97406427307c9d8e7acb23a3e6830112904ba", "label": "khafif", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1859", "sha256": "96bf7746eb21240f0509ce74920cf2bf181868fb48c0dcb383d4e8f9539d0f59", "label": "mujt", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1327", "sha256": "20d35f961e85ed9c8eee252d446650512507706ebb73f273b991416647bbf8c2", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0924", "sha256": "7cc3e2a164e0b7480b589c0d5e82f921bf8951e7a721123da0685a5ebf911f60", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2276", "sha256": "d4b50795efc52cce093cddf41eb96a4471e89272be7ed6900a6aa88834efff0e", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1581", "sha256": "14734f74f1826816ce10754bc8605c65493448374b7a94228c06b8d97255c4e9", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1543", "sha256": "4b46f14f653c34851f071829681f91208d7d1eb9ef2cc1a650a8a602a1755609", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1781", "sha256": "d3cde1b2692eb2323eb52ca22b03bb22ad1cd2661ec10f8a7b5e06362842c36b", "label": "ramal", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1558", "sha256": "a5b4617e2b8cff6405dafd25fc88f3d3e3dfaef08cf88bb1a067488c151ce51c", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1439", "sha256": "055af86035e1bcdabf3e412ddc5364b1df9c76da6a48f0735a993cb7891214d6", "label": "ruba", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0201", "sha256": "9c59cfde121401e97dad0a89c960299dc7e9cf743a38656d3f0fcf7d8c799335", "label": "ramal", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2200", "sha256": "b9d8d85403ad8c058cb957e9e0a14b7d98ad36b4cfba9924ccc43e6e23be1105", "label": "ruba", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1225", "sha256": "62b1eda4c9d295121ead870c5f6a4627ac2f1dd3ccc121ad9adcf4cca273beff", "label": "ramal", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0334", "sha256": "8d372c8eccb800121f968820bd7bdfd612e0e7c15b60401ac3eb9f2b839eaf12", "label": "geb", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1615", "sha256": "33e520aee9e547f19135ae8e22e9c0b5f85cebcd4b733f45cdef2c2d43f17384", "label": "mudari", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1680", "sha256": "e495b5beb7890bcb1b6903af2d782dae76ef4aebf67d722e752b8a88eb2a2561", "label": "mujt", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1554", "sha256": "99d310e1b7eff542e3e63bb3a2cef6c3c49063b4685eb25dc34e88f83e078260", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1682", "sha256": "79cbfcaf5e7d1214d5489486eebf8020156366ae7afbcdbb8addfa7300e14ad4", "label": "mudari", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0424", "sha256": "0a1e3c1c640596f3478e67ca32b5717381b8f11371e7670370aadbf87f1cc7d8", "label": "ramal", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1118", "sha256": "fd6f429c8341ece0b1df438915179983efa44420d887622dcd1519dec80499c5", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1242", "sha256": "0af21e440c66a24cad2935d97707027b05141db2e705256c478daa6d751d457b", "label": "khafif", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1953", "sha256": "e4a64a36a3dc2545baff2f412dd7087b28146b8d00ae8ded4570ca7e8bcdd2f6", "label": "ruba", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1694", "sha256": "9a2171b3640b277b7a3a4e6f14e67d29b1fe370b372fe7cedb2044709c826f7e", "label": "rajaz", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2266", "sha256": "b6cc18fd26b890940b79ca872df4d5f01e9d3f5db6ec95afbd539669a93f2135", "label": "hazaj", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2158", "sha256": "280b65dda417825443ab75192a89d99afe296a52d809fa0c95e0fb899bfcc942", "label": "ruba", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2378", "sha256": "78444418fdda47943ccea373d6ce8fcb672d44a5fb74e79abbad348ff54b67af", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0148", "sha256": "a32ed90a3050c5a75489943ec205881bba383b58d8cc84cae066344b739bfcad", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1904", "sha256": "94a82d6dbb0f7b07cfbf1fcdef4c3bfc63fe84926f2ac32a8d39c2abe6df1cca", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0519", "sha256": "d8d89106422813fc4c6c1ea9b8b22d1815e46561cd209b10fdd2484712ede470", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2347", "sha256": "5e5e91dd37f9f447f545ac4479ebd208f04a58e1f705def7c07733451fc450cb", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1285", "sha256": "55f87319989770de25e02023077c5c241d1a982363731c730faa1a36329c208e", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1306", "sha256": "756c0dcd620532129846c3de4756d1226babc932c7f12e16bd32ac6b85c75de9", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0198", "sha256": "57a21e54f263a180affe993664ea36504add8ec6332642972ea805bf1f78601e", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0689", "sha256": "645e2746e82a665c9549c49cdfd292516d7dd0c22e630decbf7dd5b25bb45963", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0522", "sha256": "d9b863122b1873860d569a9ccae9a4ae258669e3ac3e44195739e54792ae22c9", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P2356", "sha256": "2c441531c4a4bbc97f7b0767d74d9ba8a33633405389de60f19e900c75a37ac4", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1335", "sha256": "3efd2ec500b128444a097634a66081e6b7b1695b8cb3dd312885f85137f679a9", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P1316", "sha256": "9aae8d2a030e264057df0b3c5dd09a00414ed050097b715428b68c77dbe87478", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0108", "sha256": "8bc7940ad257bff71e21c9fd77d6acbcb99cb417572c09cddcfbeeab4cd1b903", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}
+{"id": "P0381", "sha256": "01198406d8613714abd62519762239f8a65622abd9929e53ff41303ca6b51b1b", "label": "frei", "unterform": null, "runde": 3, "reviewer": "claude-opus-5.5", "geprueft_von_mensch": false, "datum": "2026-10-28"}

@@ -4815,8 +4815,16 @@ class EnhancedTajikPoemAnalyzer:
                 structural.aruz_analysis.identified_meter not in ("unknown", "", None):
             # Nimaʾi: metrical lines of strongly varying length (after re-joining staircase
             # lines) are free verse on a metrical base; the metre stays recorded.
-            is_free_verse = self._ist_nimai(clean_content) or \
-                getattr(self.structural_analyzer, "_meter_anteil", 1.0) < 0.6 and is_free_verse
+            anteil = getattr(self.structural_analyzer, "_meter_anteil", 1.0)
+            abw = self._laengen_abweichung(clean_content)
+            schwelle = float(os.environ.get("TPA_NIMAI_ABW", "0.2"))
+            sicher = float(os.environ.get("TPA_NIMAI_ANTEIL", "0.75"))
+            # Nimaʾi: wechselnde Zeilenlaengen, und das Mass deckt nicht fast alle Zeilen
+            is_free_verse = (abw >= schwelle and anteil < sicher) or (anteil < 0.6 and is_free_verse)
+        elif os.environ.get("TPA_FREI_UEBERSCHREIBT") != "1" and not is_free_verse and \
+                self._laengen_abweichung(clean_content) >= 0.3:
+            # kein Mass und stark wechselnde Zeilenlaengen: freier Vers
+            is_free_verse = True
         elif os.environ.get("TPA_FREI_UEBERSCHREIBT") != "1" and is_free_verse and \
                 self._laengen_abweichung(clean_content) < 0.1:
             # isometric lines without a detected metre: detection failure, not free verse
