@@ -15,6 +15,7 @@ This implementation combines:
 Merged from analyzer.py and analyzer2.py enhancements.
 """
 
+import os
 import re
 import json
 import logging
@@ -1123,8 +1124,15 @@ class ClassicalPhonology:
         self.logger = logging.getLogger(f"{__name__}.ClassicalPhonology")
         
         # Vowel classifications (Cyrillic Tajik)
-        self.short_vowels = set('аеиоуэ')
-        self.long_vowels = set('ӣӯ')
+        # Tajik Cyrillic: о = classical ā and е = classical ē/ī are always long in prosody;
+        # а is short; и and у are ambiguous (i/ī, u/ū) and treated as short unless closed.
+        # Old behaviour (о/е short except a word list): TPA_KURZES_O=1.
+        if os.environ.get("TPA_KURZES_O") == "1":
+            self.short_vowels = set('аеиоуэ')
+            self.long_vowels = set('ӣӯ')
+        else:
+            self.short_vowels = set('аиуэ')
+            self.long_vowels = set('ӣӯое')
         self.compound_vowels = {'я': 'a', 'ю': 'u', 'ё': 'o'}
         
         # Diphthongs that make syllables heavy
@@ -1199,7 +1207,7 @@ class ClassicalPhonology:
                 return SyllableType.HEAVY
             
             # === Rule 3: Long vowel makes syllable Heavy ===
-            if internal.is_long_vowel:
+            if internal.is_long_vowel or internal.nucleus in self.long_vowels:
                 return SyllableType.HEAVY
             
             # === Rule 4: Diphthong makes syllable Heavy ===
@@ -2242,6 +2250,22 @@ class AruzMeterAnalyzer:
             # Create prosodic syllables for output
             line_scansion = self._create_line_scansion(syllable_tuples, syllable_weights)
             
+            # Persian metres first (derived forms used in Persian/Tajik poetry, see persian_meters.py)
+            if os.environ.get("TPA_NUR_ARABISCH") != "1":
+                pm = self._match_persian(syllable_tuples, syllable_weights)
+                if pm:
+                    name, acc, sym = pm
+                    return AruzAnalysis(
+                        identified_meter=name, meter_arabic="", pattern_match="persisches Halbversmuster",
+                        full_pattern=sym,
+                        confidence=MeterConfidence.HIGH if acc >= 0.95 else MeterConfidence.MEDIUM,
+                        pattern_accuracy=acc, variations_detected=[], line_scansion=line_scansion,
+                        caesura_positions=[], feet_breakdown=[], alternative_meters=[])
+
+            # Persian overlong syllables (CV̄C, CVCC) count as heavy + light in the metre
+            if os.environ.get("TPA_OHNE_UEBERLANG") != "1":
+                syllable_weights = self._expand_overlong(syllable_tuples, syllable_weights)
+
             # Try to match against known meters
             match_result = self._match_meter(syllable_weights)
             
@@ -2277,6 +2301,49 @@ class AruzMeterAnalyzer:
         except Exception as e:
             self.logger.error(f"Meter analysis failed for line '{line[:50]}...': {e}", exc_info=True)
             return self._create_empty_analysis(f"Analysis error: {str(e)}")
+
+    def _match_persian(self, syllable_tuples, weights):
+        """Symbols L/S/u/X per prosodic position (overlong = L+S) and best Persian metre (>= 0.85)."""
+        from persian_meters import bestes_metrum
+        long_v = self.phonology.long_vowels
+        sym = []
+        n = len(syllable_tuples)
+        for i, ((_, syl), w) in enumerate(zip(syllable_tuples, weights)):
+            s = self.phonology._decompose_syllable(unicodedata.normalize('NFC', syl.strip().lower()))
+            if i == n - 1:
+                sym.append("X")
+            elif w == SyllableType.HEAVY:
+                sym.append("L")
+                if s is not None and not s.is_diphthong:
+                    long_nuc = s.is_long_vowel or s.nucleus in long_v
+                    if (long_nuc and s.coda and s.coda != 'н') or len(s.coda) >= 2:
+                        sym.append("S")
+            elif w == SyllableType.LIGHT:
+                sym.append("u" if s is not None and not s.coda and s.nucleus in ('и', 'у') else "S")
+            else:
+                sym.append("X")
+        name, acc = bestes_metrum(sym)
+        if name and acc >= 0.85:
+            return name, acc, "".join(sym)
+        return None
+
+    def _expand_overlong(self, syllable_tuples, weights):
+        """Insert a light syllable after each overlong one (not line-final; -ān/-īn/-ūn excepted)."""
+        long_v = self.phonology.long_vowels
+        out = []
+        n = len(syllable_tuples)
+        for i, ((_, syl), w) in enumerate(zip(syllable_tuples, weights)):
+            out.append(w)
+            if i == n - 1 or w != SyllableType.HEAVY:
+                continue
+            s = self.phonology._decompose_syllable(unicodedata.normalize('NFC', syl.strip().lower()))
+            if s is None or s.is_diphthong:
+                continue
+            coda = s.coda
+            long_nuc = s.is_long_vowel or s.nucleus in long_v
+            if (long_nuc and coda and coda != 'н') or len(coda) >= 2:
+                out.append(SyllableType.LIGHT)
+        return out
 
     def _clean_line(self, line: str) -> str:
         """Clean and normalize a line for analysis"""
@@ -3921,8 +3988,13 @@ class StructuralAnalyzer:
 
         # Analyze with original lines for rhyme, cleaned lines for meter
         for i, original_line in enumerate(clean_lines):
-            # Use cleaned line for meter analysis
-            meter_line = analysis_lines[i] if i < len(analysis_lines) else original_line
+            # The radif is part of the metre and is scanned with the line (removing it shortens
+            # every hemistich and pushes the scansion towards wrong metres). Old behaviour:
+            # TPA_METER_OHNE_RADIF=1.
+            if os.environ.get("TPA_METER_OHNE_RADIF") == "1":
+                meter_line = analysis_lines[i] if i < len(analysis_lines) else original_line
+            else:
+                meter_line = original_line
             
             # Analyze meter with cleaned line
             aruz_analysis_for_line = self.aruz_analyzer.analyze_meter(meter_line)
@@ -4082,6 +4154,15 @@ class StructuralAnalyzer:
                 alternative_meters=[]
             )
 
+        if os.environ.get("TPA_ALTE_GESAMTWERTUNG") != "1":
+            # A poem has a metre only if at least 40 % of its lines carry the same metre with
+            # >= 85 % pattern accuracy; single chance matches in free verse do not count.
+            sicher = Counter(m.identified_meter for m in meters
+                             if m.identified_meter != "unknown" and m.pattern_accuracy >= 0.85)
+            if not sicher or sicher.most_common(1)[0][1] < max(2, 0.4 * len(meters)):
+                return self._determine_overall_meter([])
+            top = sicher.most_common(1)[0][0]
+            return max((m for m in meters if m.identified_meter == top), key=lambda m: m.pattern_accuracy)
         meter_counts = Counter(m.identified_meter for m in meters)
         most_common = meter_counts.most_common(1)[0][0]
 

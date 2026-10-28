@@ -50,6 +50,8 @@ def main():
     an = EnhancedTajikPoemAnalyzer(enable_corpus=False)
     c = Corpus(Path(__file__).resolve().parent.parent / "tajik_corpus")
     erst = json.load(open(DIR.parent / "dubletten.json", encoding="utf-8"))
+    df = DIR.parent / "datierung.json"            # Zeitraum fuer nur in der Sammelausgabe belegte Gedichte
+    dat = json.load(open(df, encoding="utf-8")) if df.exists() else {}
     pid_of = {}                                   # ordner#nr -> poem id
     t0 = time.time(); done = fail = belege = uebers = 0
     for v in vols:
@@ -83,7 +85,8 @@ def main():
                          "publisher": pub, "notes": f"{art}; Auflage {run}; OCR tgk"},
                 analysis=analysis,
                 contributor={"anonymous": True, "source_filename": v, "batch_id": f"ocr_{v}", "page": pm["page"],
-                             "erstbeleg_sammelausgabe": v in SAMMELBAENDE},
+                             "erstbeleg_sammelausgabe": v in SAMMELBAENDE,
+                             "datierung": dat.get(k)},
             )
             done += 1
             if done % 100 == 0:
