@@ -131,6 +131,21 @@ class PoemPreprocessor:
             return False
         
         # Starts with dedication marker
+        if os.environ.get("TPA_ALTE_WIDMUNG") != "1":
+            # "Ба"/"Барои" open countless verses: a dedication names someone (capitalised word or
+            # устод/ёди ...), is short and does not continue the sentence (no trailing comma)
+            w = line_stripped.strip('()"«»“”*').split()
+            if not w or len(w) > 8 or line_stripped.rstrip()[-1:] in ",;":
+                return False
+            kopf = w[0].lower()
+            if kopf not in ("ба", "барои", "тақдим", "бахшида", "пешкаш", "ёдгор", "ba", "baroi"):
+                return False
+            rest = w[1:]
+            if not rest:
+                return False
+            nomen = {"устод", "устоди", "ёди", "хотираи", "муносибати", "падарам", "модарам",
+                     "дӯстам", "хоҳарам", "бародарам", "шоир", "шоира", "ҳамсарам", "фарзандам"}
+            return rest[0][:1].isupper() or rest[0].lower() in nomen
         for marker in self.DEDICATION_MARKERS:
             if line_stripped.lower().startswith(marker.lower()):
                 # Check if it's reasonably short (likely dedication)
@@ -2260,7 +2275,8 @@ class AruzMeterAnalyzer:
                         full_pattern=sym,
                         confidence=MeterConfidence.HIGH if acc >= 0.95 else MeterConfidence.MEDIUM,
                         pattern_accuracy=acc, variations_detected=[], line_scansion=line_scansion,
-                        caesura_positions=[], feet_breakdown=[], alternative_meters=[])
+                        caesura_positions=[], feet_breakdown=[],
+                        alternative_meters=getattr(self, "_letzte_kandidaten", []))
 
             # Persian overlong syllables (CV̄C, CVCC) count as heavy + light in the metre
             if os.environ.get("TPA_OHNE_UEBERLANG") != "1":
@@ -2314,15 +2330,22 @@ class AruzMeterAnalyzer:
         for i, ((pos, syl), w) in enumerate(zip(syllable_tuples, weights)):
             s = dec[i]
             nxt = dec[i + 1] if i + 1 < n else None
-            vok_folgt = nxt is not None and not getattr(nxt, "onset", "x")
+            # ё/я/ю/е tragen ein j im Anlaut: kein vokalischer Anlaut
+            vok_folgt = nxt is not None and not getattr(nxt, "onset", "x") and nxt.nucleus not in "ёяюе"
+            if regeln and i < n - 1 and s is not None and s.nucleus == "ё" and not s.coda \
+                    and w == SyllableType.LIGHT:
+                w = SyllableType.HEAVY      # ё = jō, lang
             wortende = i + 1 < n and syllable_tuples[i + 1][0] != pos + len(syl)
             if i == n - 1:
                 sym.append("X")
+            elif regeln and vok_folgt and s is not None and s.is_diphthong and not s.coda:
+                # Diphthong vor Vokal: Gleitlaut wird Anlaut (навӣ = na-vī)
+                sym.append("L" if s.nucleus[:1] in long_v else "u")
             elif regeln and vok_folgt and s is not None and not s.is_diphthong and len(s.coda) >= 1 \
-                    and wortende:
+                    and (wortende or len(s.coda) == 1):
                 # Vasl: Schlusskonsonant bindet an den vokalischen Anlaut des Folgeworts
                 long_nuc = s.is_long_vowel or s.nucleus in long_v
-                sym.append("L" if (long_nuc or len(s.coda) >= 2) else "S")
+                sym.append("L" if (long_nuc or len(s.coda) >= 2) else ("S" if not wortende else "u"))
             elif regeln and vok_folgt and s is not None and not s.coda and w == SyllableType.LIGHT:
                 # Hiat (verlorenes ʿayn/hamza, Izafa nach -ī): Laenge offen
                 sym.append("u")
@@ -2330,7 +2353,10 @@ class AruzMeterAnalyzer:
                 sym.append("L")
                 if s is not None and not s.is_diphthong:
                     long_nuc = s.is_long_vowel or s.nucleus in long_v
-                    if (long_nuc and s.coda and s.coda != 'н') or len(s.coda) >= 2:
+                    if regeln and s.nucleus == 'ӯ' and len(s.coda) == 1 and s.coda != 'н':
+                        # ӯ steht auch fuer kurzes o (шӯҳрат): Ueberlaenge offen
+                        sym.append("o")
+                    elif (long_nuc and s.coda and s.coda != 'н') or len(s.coda) >= 2:
                         sym.append("S")
                     elif regeln and s.nucleus in ('и', 'у') and len(s.coda) == 1 and s.coda != 'н':
                         # i/u kann ungeschriebenes ī/ū sein (pīr, nīz): Ueberlaenge offen
@@ -2340,6 +2366,8 @@ class AruzMeterAnalyzer:
             else:
                 sym.append("X")
         name, acc = bestes_metrum(sym)
+        from persian_meters import alle_metren
+        self._letzte_kandidaten = alle_metren(sym, 0.85)
         if name and acc >= 0.85:
             return name, acc, "".join(sym)
         return None
@@ -4188,6 +4216,50 @@ class StructuralAnalyzer:
         if os.environ.get("TPA_ALTE_GESAMTWERTUNG") != "1":
             # A poem has a metre only if at least 40 % of its lines carry the same metre with
             # >= 85 % pattern accuracy; single chance matches in free verse do not count.
+            if os.environ.get("TPA_OHNE_GRUNDMASS") != "1":
+                from persian_meters import grundmass
+                zaehl, gewicht = Counter(), Counter()
+                for m in meters:
+                    namen = {m.identified_meter: m.pattern_accuracy} if m.identified_meter != "unknown" \
+                        and m.pattern_accuracy >= 0.85 else {}
+                    for a in (m.alternative_meters or []):
+                        if isinstance(a, (list, tuple)) and len(a) == 2 and isinstance(a[1], float) \
+                                and a[1] >= 0.85:
+                            namen[a[0]] = max(namen.get(a[0], 0.0), a[1])
+                    beste = {}
+                    for x, acc in namen.items():
+                        b = grundmass(x)
+                        beste[b] = max(beste.get(b, 0.0), acc)
+                    for b, acc in beste.items():
+                        zaehl[b] += 1
+                        gewicht[b] += acc - 0.8      # sichere Zeilen zaehlen mehr als knappe
+                if gewicht and zaehl[gewicht.most_common(1)[0][0]] >= max(2, 0.4 * len(meters)):
+                    basis = gewicht.most_common(1)[0][0]
+                    # das Rubai-Schema ist dehnbar; passt das feste Dubaiti-Mass (hazaj musaddas)
+                    # auf ebenso viele Zeilen, gilt dieses
+                    silben = sorted(len(m.line_scansion or []) for m in meters)
+                    median = silben[len(silben) // 2] if silben else 0
+                    if basis == "rubāʿī" and (zaehl.get("hazaj musaddas", 0) >= zaehl[basis] or median <= 10):
+                        # Rubai-Halbverse haben fast immer 12-13 Silben, Dubaiti-Zeilen 10-11
+                        rest = [b for b, _ in gewicht.most_common() if b != "rubāʿī"
+                                and zaehl[b] >= max(2, 0.4 * len(meters))]
+                        basis = "hazaj musaddas" if zaehl.get("hazaj musaddas", 0) >= max(2, 0.4 * len(meters)) \
+                            else (rest[0] if rest else basis)
+                    k = zaehl[basis]
+                    self._meter_anteil = k / len(meters)
+                    treffer = [m for m in meters if m.identified_meter != "unknown"
+                               and grundmass(m.identified_meter) == basis]
+                    if treffer:
+                        top = Counter(m.identified_meter for m in treffer).most_common(1)[0][0]
+                        return max((m for m in treffer if m.identified_meter == top),
+                                   key=lambda m: m.pattern_accuracy)
+                    kand = Counter(a[0] for m in meters for a in (m.alternative_meters or [])
+                                   if isinstance(a, (list, tuple)) and len(a) == 2
+                                   and grundmass(a[0]) == basis).most_common(1)[0][0]
+                    beste = max(meters, key=lambda m: m.pattern_accuracy)
+                    from dataclasses import replace
+                    return replace(beste, identified_meter=kand)
+                return self._determine_overall_meter([])
             sicher = Counter(m.identified_meter for m in meters
                              if m.identified_meter != "unknown" and m.pattern_accuracy >= 0.85)
             if not sicher or sicher.most_common(1)[0][1] < max(2, 0.4 * len(meters)):

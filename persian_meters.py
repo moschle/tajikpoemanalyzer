@@ -21,7 +21,7 @@ METREN = [
     ("hazaj musaddas maḥdhūf", "SLLL SLLL SLL"),
     ("hazaj musamman akhrab makfūf maḥdhūf", "LLS SLLS SLLS SLL"),
     ("hazaj musamman akhrab", "LLS SLLL LLS SLLL"),
-    ("hazaj musaddas akhrab maqbūḍ maḥdhūf", "LLS LSLL SLL"),
+    ("hazaj musaddas akhrab maqbūḍ maḥdhūf", "LLS SLSL SLL"),
     ("hazaj musaddas akhrab makfūf maḥdhūf", "LLS SLLS SLL"),
     ("muḍāriʿ musamman akhrab makfūf maḥdhūf", "LLS LSLS SLLS LSL"),
     ("muḍāriʿ musamman akhrab", "LLS LSLL LLS LSLL"),
@@ -34,6 +34,7 @@ METREN = [
     ("rajaz musamman sālim", "LLSL LLSL LLSL LLSL"),
     ("rajaz musamman maṭwī makhbūn", "LSSL SLSL LSSL SLSL"),
     ("munsariḥ musamman maṭwī makshūf", "LSSL LSLS LSSL LSL"),
+    ("munsariḥ musamman maṭwī makshūf", "LSSL LSL LSSL LSL"),
     ("sarīʿ musaddas maṭwī makshūf", "LSSL LSSL LSL"),
     ("muqtaḍab musamman maṭwī", "LSLS LSSL LSLS LSSL"),
     ("kāmil musamman sālim", "SSLSL SSLSL SSLSL SSLSL"),
@@ -55,6 +56,19 @@ METREN += [
     ("hazaj musaddas sālim", "SLLL SLLL SLLL"),
     ("rajaz murabbaʿ sālim", "LLSL LLSL"),
     ("rajaz musaddas sālim", "LLSL LLSL LLSL"),
+    ("hazaj musamman ashtar", "LSL SLLL LSL SLLL"),
+    ("hazaj murabbaʿ ashtar", "LSL SLLL"),
+    ("ramal musamman sālim", "LSLL LSLL LSLL LSLL"),
+    ("ramal musaddas sālim", "LSLL LSLL LSLL"),
+    ("ramal musamman makhbūn", "LSLL SSLL SSLL SSLL"),
+    ("ramal musamman makhbūn", "SSLL SSLL SSLL SSLL"),
+    ("rajaz musamman makhbūn", "SLSL SLSL SLSL SLSL"),
+    ("rajaz musaddas makhbūn", "SLSL SLSL SLSL"),
+    ("rajaz murabbaʿ makhbūn", "SLSL SLSL"),
+    ("rajaz musamman maṭwī", "LSSL LSSL LSSL LSSL"),
+    ("muḍāriʿ murabbaʿ akhrab maḥdhūf", "LLS LSL"),
+    ("hazaj murabbaʿ akhrab", "LLS SLLL"),
+    ("ramal murabbaʿ maḥdhūf", "LSLL LSL"),
 ]
 
 
@@ -115,3 +129,35 @@ def bestes_metrum(silben):
         if a > acc:
             best, acc = name, a
     return best, acc
+
+
+
+def alle_metren(silben, schwelle=0.85):
+    """Alle Muster mit Genauigkeit >= schwelle als [(name, genauigkeit)], absteigend."""
+    silben = tuple(silben)
+    fest = sum(1 for x in silben if x != "o")
+    opt = len(silben) - fest
+    out = {}
+    for name, m in MUSTER:
+        if not fest <= len(m) <= fest + opt:
+            continue
+        r = _passung(silben, m)
+        if r is not None and r / len(m) >= schwelle:
+            out[name] = max(out.get(name, 0.0), r / len(m))
+    return sorted(out.items(), key=lambda x: -x[1])
+
+
+def grundmass(name):
+    """Grundmass = Familie + Fusszahl ('ramal musaddas'); Varianten des ersten und letzten Fusses
+    (makhbun/salim, mahdhuf/aslam) sowie Rubai zaehlen zusammen. Akhrab-Formen des Hazaj bleiben
+    eigenes Mass, ebenso Ashtar."""
+    w = str(name).split()
+    if not w:
+        return ""
+    if w[0].startswith("rub"):
+        return "rubāʿī"
+    basis = " ".join(w[:2])
+    for k in ("akhrab", "ashtar", "mashkūl"):
+        if k in w:
+            basis += " " + k
+    return basis
