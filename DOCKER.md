@@ -3,7 +3,7 @@
 ## Schnellstart
 
 ```bash
-cd ~/tajikpoemanalyzer
+cd ~/wazan
 ./deploy.sh
 ```
 
@@ -40,7 +40,7 @@ docker-compose down
 ## Verzeichnisstruktur
 
 ```
-tajikpoemanalyzer/
+wazan/
 ├── data/           → Corpus-Dateien, Lexikon (wird in Container gemountet)
 ├── exports/        → Exportierte Excel-Dateien (persistiert)
 ├── uploads/        → Hochgeladene Dateien (persistiert)
@@ -128,7 +128,7 @@ docker-compose up -d
 Falls Docker Probleme macht:
 
 ```bash
-cd ~/tajikpoemanalyzer
+cd ~/wazan
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt

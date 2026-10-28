@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Tajik Poetry Analyzer"
+title: "wazan: Tajik Poetry Analyzer"
 message: "If you use this software, please cite it using these metadata."
 type: software
 authors:
@@ -8,11 +8,13 @@ authors:
     orcid: "https://orcid.org/0009-0008-0483-093X"
     city: Leipzig
     country: DE
-repository-code: "https://github.com/moschle/tajikpoemanalyzer"
+repository-code: "https://github.com/moschle/wazan"
 abstract: >-
+  wazan (formerly tajikpoemanalyzer; Persian/Tajik vazn, 'metre').
   Corpus and analysis tool for Tajik poetry, with a focus on free verse
   (shiʿri nou) alongside classical structure. Provides syllable and stanza
-  analysis, experimental detection of the sixteen classical ʿarūḍ metres,
+  analysis, experimental ʿarūḍ scansion against the derived Persian metres (incl. vaṣl, overlength,
+  rubāʿī variants) with a Nimaʾi rule for metrical free verse,
   phonetic recognition of qāfiya and radīf, free-verse metrics such as
   enjambment and line-length variation, neologism detection against a
   lexicon of more than 68,000 word forms, thematic analysis and export of a
@@ -27,5 +29,5 @@ keywords:
   - prosody
   - digital humanities
 license: MIT
-version: 1.0.0
-date-released: "2026-09-16"
+version: 1.1.0
+date-released: "2026-10-28"

@@ -1,4 +1,6 @@
-# Tajik Poetry Analyzer
+# wazan — Tajik Poetry Analyzer
+
+*wazan* (Persian/Tajik *vazn*, 'metre'); formerly **tajikpoemanalyzer**. Old GitHub links redirect here.
 
 [![DOI](https://zenodo.org/badge/1135602419.svg)](https://doi.org/10.5281/zenodo.22807228)
 
@@ -122,7 +124,7 @@ the library schema that was never populated. Nothing imported it.
 
 ### Option A: Docker (recommended)
 ```bash
-cd ~/tajikpoemanalyzer
+cd ~/wazan
 ./deploy.sh
 # Open http://localhost:8501
 ```
@@ -130,7 +132,7 @@ cd ~/tajikpoemanalyzer
 
 ### Option B: Local
 ```bash
-cd ~/tajikpoemanalyzer
+cd ~/wazan
 pip install -r requirements.txt
 streamlit run ui.py
 ```
@@ -209,7 +211,7 @@ print(f"Neologisms: {result.content.neologisms}")
 ## File Structure
 
 ```
-tajikpoemanalyzer/
+wazan/
 ├── analyzer.py          # Main analysis module
 ├── ui.py                # Streamlit web interface
 ├── data/
@@ -259,7 +261,7 @@ MIT License
 
 ### Имкони A: Docker (тавсияшаванда)
 ```bash
-cd ~/tajikpoemanalyzer
+cd ~/wazan
 ./deploy.sh
 # Кушодан http://localhost:8501
 ```
@@ -267,7 +269,7 @@ cd ~/tajikpoemanalyzer
 
 ### Имкони B: Маҳаллӣ
 ```bash
-cd ~/tajikpoemanalyzer
+cd ~/wazan
 pip install -r requirements.txt
 streamlit run ui.py
 ```
@@ -338,7 +340,7 @@ print(f"Навкалимаҳо: {result.content.neologisms}")
 ## Сохтори Файлҳо
 
 ```
-tajikpoemanalyzer/
+wazan/
 ├── analyzer.py          # Модули асосии таҳлил
 ├── ui.py                # Интерфейси вебии Streamlit
 ├── data/
