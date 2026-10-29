@@ -4355,9 +4355,14 @@ class ContentAnalyzer:
         
         forward = mtld_forward(words)
         backward = mtld_forward(words[::-1])
-        avg_factors = (forward + backward) / 2
-        
-        return len(words) / avg_factors if avg_factors > 0 else float(len(words))
+        if os.environ.get("TPA_ALTE_MTLD") == "1":
+            avg_factors = (forward + backward) / 2
+            return len(words) / avg_factors if avg_factors > 0 else float(len(words))
+        # McCarthy & Jarvis 2010: MTLD forward and backward separately, then the mean of both values
+        n = len(words)
+        f = n / forward if forward > 0 else float(n)
+        b = n / backward if backward > 0 else float(n)
+        return (f + b) / 2
 
     def analyze(self, poem_content: str) -> ContentAnalysis:
         """Comprehensive content analysis"""
